@@ -1,4 +1,4 @@
-# qip
+# piq
 
 A new Flutter project.
 
