@@ -41,10 +41,10 @@ class _SingleSelectionListState extends State<SingleSelectionList> {
   void initState() {
     super.initState();
     answerAux = ValueNotifier<String>(
-        widget.options.contains(widget.answer.value) ||
-                widget.answer.value == ""
-            ? widget.answer.value
-            : 'other');
+      widget.options.contains(widget.answer.value) || widget.answer.value == ""
+          ? widget.answer.value
+          : 'other',
+    );
   }
 
   @override
@@ -74,9 +74,10 @@ class _SingleSelectionListState extends State<SingleSelectionList> {
                     widget.title!,
                     textAlign: TextAlign.justify,
                     style: const TextStyle(
-                        fontSize: fontSize,
-                        color: Colors.black,
-                        decorationColor: Colors.black),
+                      fontSize: fontSize,
+                      color: Colors.black,
+                      decorationColor: Colors.black,
+                    ),
                   ),
                 ),
               ],
@@ -97,49 +98,49 @@ class _SingleSelectionListState extends State<SingleSelectionList> {
             },
             builder: (FormFieldState<ValueNotifier<String>> state) =>
                 MontaAlternativas(
-              optionsColumnsSize: widget.optionsColumnsSize,
-              length: widget.options.length,
-              builder: (int id) => Expanded(
-                child: CustomButton(
-                  title: widget.options[id],
-                  value: widget.options[id],
-                  color: widget.colors?[id],
-                  groupValue: answerAux,
-                  onChanged: (_) {
-                    state.didChange(answerAux);
-                  },
-                ),
-              ),
-              childList: <Widget>[
-                if (widget.hasPrefiroNaoDizer)
-                  Expanded(
+                  optionsColumnsSize: widget.optionsColumnsSize,
+                  length: widget.options.length,
+                  builder: (int id) => Expanded(
                     child: CustomButton(
-                        title: "Prefiro não dizer",
-                        value: "Prefiro não dizer",
-                        groupValue: answerAux,
-                        onChanged: (_) {
-                          state.didChange(answerAux);
-                        }),
-                  ),
-                if (widget.otherItem != null)
-                  Expanded(
-                    child: CustomButton(
-                      title: widget.otherLabel == null
-                          ? "Outro (Qual?)"
-                          : widget.otherLabel!,
-                      value: "other",
+                      title: widget.options[id],
+                      value: widget.options[id],
+                      color: widget.colors?[id],
                       groupValue: answerAux,
                       onChanged: (_) {
                         state.didChange(answerAux);
                       },
                     ),
                   ),
-                if ((answerAux.value == "other") && (widget.otherItem != null))
-                  Expanded(
-                    child: widget.otherItem!,
-                  ),
-              ],
-            ),
+                  childList: <Widget>[
+                    if (widget.hasPrefiroNaoDizer)
+                      Expanded(
+                        child: CustomButton(
+                          title: "Prefiro não dizer",
+                          value: "Prefiro não dizer",
+                          groupValue: answerAux,
+                          onChanged: (_) {
+                            state.didChange(answerAux);
+                          },
+                        ),
+                      ),
+                    if (widget.otherItem != null)
+                      Expanded(
+                        child: CustomButton(
+                          title: widget.otherLabel == null
+                              ? "Other (Which ?)"
+                              : widget.otherLabel!,
+                          value: "other",
+                          groupValue: answerAux,
+                          onChanged: (_) {
+                            state.didChange(answerAux);
+                          },
+                        ),
+                      ),
+                    if ((answerAux.value == "other") &&
+                        (widget.otherItem != null))
+                      Expanded(child: widget.otherItem!),
+                  ],
+                ),
           ),
         ],
       ),
