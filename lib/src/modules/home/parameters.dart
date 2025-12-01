@@ -44,7 +44,7 @@ void addListenerComposto(
 Map<int, Map<String, dynamic>> telas = {
   1: {
     'hasProx': true,
-    'header': "Questionário Interativo Psicopatológico (QIP)",
+    'header': "Interactive Psychopathology Questionnaire (QIP)",
     'answerLenght': 1,
     'itens':
         (
@@ -52,47 +52,52 @@ Map<int, Map<String, dynamic>> telas = {
           GlobalKey<FormFieldState<List<ValueNotifier<String>>>> state,
         ) => [
           const Text("""
+FREE AND INFORMED CONSENT FORM
 
-TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO
+You are being invited to participate in the research titled “Systematization of tools for Psychopathological Assessment using Artificial Intelligence techniques”, under the responsibility of researchers Prof. Dr. Keiji Yamanaka and Ms. Résia da Silva Morais (from the School of Electrical Engineering at the Federal University of Uberlândia). This research aims to confirm the possibility of using Artificial Intelligence techniques to evaluate mental health structures called Psychic Mental Functions (attention, consciousness, orientation, time and space experience, sensory perception, memory, affectivity, will and psychomotricity, thought, reality judgment, language, intelligence, and social cognition), essential for high-quality psychopathological assessment to assist mental health professionals.
 
-  
-Você está sendo convidado(a) a participar da pesquisa intitulada “Sistematização de ferramentas para Avaliação Psicopatológica utilizando técnica de Inteligência Artificial”, sob a responsabilidade dos pesquisadores Prof. Dr. Keiji Yamanaka, Ms. Résia da Silva Morais (da Faculdade de Engenharia Elétrica da Universidade Federal de Uberlândia). Nesta pesquisa nós estamos buscando confirmar a possibilidade de usar técnicas de Inteligência artificial para avaliar as estruturas de saúde mental chamadas de Funções Mentais Psíquicas (atenção, consciência, orientação, experiências de tempo e de espaço, sensopercepção, memória, afetividade, vontade e psicomotricidade, pensamento, juízos de realidade, linguagem, Inteligência e cognição social), essenciais para uma excelente avaliação psicopatológica com o objetivo de ajudar os profissionais da área da saúde mental. 
-O Termo/Registro de Consentimento Livre e Esclarecido está sendo obtido pelos pesquisadores Dr. Keiji Yamanaka e Ms. Résia da Silva Morais, antecedendo toda e qualquer experimentação que envolva a pesquisa. Conforme o item IV da Resol. CNS 466/12 ou Cap. III da Resol. 510/2016, o participante terá o tempo que julgar necessário para decidir se deseja participar da pesquisa. Se você tiver qualquer dúvida em relação à pesquisa, você pode entrar em contato com o(a) pesquisador(a) pelo e-mail duvidaspsicopatologiacomia@gmail.com para discutir as informações do estudo
-Na sua participação, após você ter compreendido as informações que constituem o Termo de Consentimento Livre e Esclarecido e após ter assinado eletronicamente o campo no qual “Concorda” participar da pesquisa, serão apresentadas telas com as instruções das tarefas que você irá responder. Certifique-se que esteja em um ambiente silencioso, sem estímulos de distração. Em algumas telas serão apresentados sons, sendo assim, fundamental o uso de fones ou que você ligue os alto-falantes do seu dispositivo. A avaliação das Funções Psíquicas será através de 45 testes apresentados através de 66 telas e você gastará em torno de 25 minutos. Em algumas questões, será solicitado que você ouça primeiramente alguns sons para respondê-las, e cada tela apresentada pelo questionário interativo permitirá a identificação da relação entre as respostas dadas por você e sinais de possíveis funções mentais afetadas.
-As respostas serão coletadas e registradas por meio da plataforma do Google Forms e do sistema TensorFlow que agrupará os dados possibilitando a análise das ferramentas de avaliação psicopatológica. O pesquisador responsável atenderá as orientações das Resoluções nº 466/2012, Capítulo XI, Item Xl.2: f e nº 510/2016, Capítulo VI, Art. 28: IV; e manterá os dados da pesquisa em arquivo, físico ou digital, sob sua guarda e responsabilidade, por um período mínimo de 5 (cinco) anos após o término da pesquisa. Uma vez concluída a coleta de dados, o pesquisador responsável irá fazer o download dos dados coletados para um dispositivo eletrônico local, apagando todo e qualquer registro de qualquer plataforma virtual, ambiente compartilhado ou "nuvem". Em nenhum momento você será identificado. Os resultados da pesquisa serão publicados e ainda assim a sua identidade será preservada.
-Você não terá nenhum gasto e nem ganho financeiro por participar na pesquisa. Você não receberá pagamentos por ser participante.  Todas as informações obtidas por meio de sua participação serão de uso exclusivo para esta pesquisa e ficarão sob a guarda do/da pesquisador/a responsável. Havendo algum dano decorrente da pesquisa, você terá direito a solicitar indenização através das vias judiciais (Código Civil, Lei 10.406/2002, Artigos 927 a 954 e Resolução CNS nº 510 de 2016, Artigo 19).
-Os riscos consistem em possibilidade de cansaço durante a realização da prova e algum desconforto relacionado a utilização dos testes. Para minimizar os riscos o instrumento de coleta de dados será respondido de forma virtual e anônima. Os pesquisadores se comprometem a tomar medidas de proteção e confidencialidade dos dados para que o sigilo da sua identidade seja preservado. Na possibilidade de ocorrer algum desconforto emocional durante a realização da prova, fique à vontade para entrar em contato pelo e-mail duvidaspsicopatologiacomia@gmail.com, e será acolhido pelo pesquisador assistente (Psicólogo Clínico). Caso o pesquisador identificar necessidade de continuidade da assistência, de forma virtual, você receberá orientações psicoterapêuticas breve e será encaminhado (a) para atendimento psicológico na rede pública mais próxima da sua residência. Os benefícios serão a expansão do seu conhecimento sobre a importância da Inteligência artificial como um meio auxiliar no processo de avaliação psicológica, o que pode facilitar o trabalho clínico interventivo dos profissionais da saúde mental. Os dados da pesquisa serão mantidos em arquivo, físico e digital, sob sua guarda e responsabilidade, por um período mínimo de 5 (cinco) anos após o término da pesquisa, conforme capítulo VI da resolução CNS 510, de 07 de abril de 2016. 
-Você é livre para deixar de participar da pesquisa a qualquer momento sem qualquer prejuízo ou coação. Até o momento da divulgação dos resultados, você também é livre para solicitar a retirada dos seus dados da pesquisa. Uma via original deste Termo de Consentimento Livre e Esclarecido ficará com você, você poderá salvar em seu dispositivo eletrônico. Em caso de qualquer dúvida ou reclamação a respeito da pesquisa, você poderá entrar em contato com: Dr. Keiji Yamanaka, Faculdade de Engenharia Elétrica da Universidade Federal de Uberlândia. Av. João Naves de Ávila, 2121 Campus Santa Mônica - Universidade Federal de Uberlândia CEP 38400-902 - Uberlândia MG - Brasil - Fone (sala coordenação): (34) 3239-4706, ou com a Pesquisadora Psicóloga Ms. Résia Silva de Morais, Faculdade de Engenharia Elétrica da Universidade Federal de Uberlândia. Av. João Naves de Ávila, 2121Campus Santa Mônica - Universidade Federal de Uberlândia, CEP 38400-902 - Uberlândia MG - Brasil – e-mail: duvidaspsicopatologiacomia@gmail.com. Para obter orientações quanto aos direitos dos participantes de pesquisa acesse a cartilha no link:https://conselho.saude.gov.br/images/comissoes/conep/documentos/Cartilha_Direitos_Eticos_2020.pdf.
-Você poderá também entrar em contato com o CEP - Comitê de Ética na Pesquisa com Seres Humanos na Universidade Federal de Uberlândia, localizado na Av. João Naves de Ávila, nº 2121, bloco A, sala 224, campus Santa Mônica – Uberlândia/MG, 38408-100; telefone: 34-3239-4131 ou pelo e-mail: cep@propp.ufu.br. O CEP é um colegiado independente criado para defender os interesses dos participantes das pesquisas em sua integridade e dignidade e para contribuir para o desenvolvimento da pesquisa dentro de padrões éticos conforme resoluções do Conselho Nacional de Saúde.
-Ao assinalar a opção “Concordo”, a seguir, você declara que aceita participar do projeto citado acima, voluntariamente, após ter sido devidamente esclarecido, pelos pesquisadores; que entendeu como é a pesquisa, que pode solicitar esclarecimentos em relação as dúvidas com o/a pesquisador/a via e-mail (duvidaspsicopatologiacomia@gmail.com); e que pode desistir em qualquer momento, durante e depois de participar; você autoriza a divulgação dos dados obtidos neste estudo mantendo em sigilo sua identidade. 
+The Free and Informed Consent Form is being obtained by the researchers Dr. Keiji Yamanaka and Ms. Résia da Silva Morais before any experimentation related to the study. According to item IV of Resolution CNS 466/12 or Chapter III of Resolution 510/2016, the participant will have all the time needed to decide whether to participate in the research. If you have any questions regarding the study, you may contact the researchers via the email duvidaspsicopatologiacomia@gmail.com to discuss any information.
+
+After understanding all information contained in this Consent Form and electronically selecting the option “I Agree”, screens containing instructions for the tasks you will answer will be displayed. Make sure you are in a quiet environment, free from distractions. Some screens will play sounds, so it is essential to use headphones or turn on your device’s speakers. The evaluation of the Psychic Functions will consist of 45 tests presented across 66 screens, and it will take approximately 25 minutes. In some questions, you will be instructed to listen to specific sounds before responding. Each screen of the interactive questionnaire will allow the identification of the relationship between your answers and possible signs of alterations in mental functions.
+
+Your answers will be collected and recorded through Google Forms and the TensorFlow system, which will group the data and enable the analysis of the psychopathological assessment tools. The responsible researcher will follow the guidelines of Resolutions No. 466/2012, Chapter XI, Item XI.2: f and No. 510/2016, Chapter VI, Article 28: IV, and will store the research data in a physical or digital archive for a minimum of 5 (five) years after the conclusion of the research. After data collection is completed, the researcher will download the data and delete all records from any virtual platform, shared environment, or cloud. You will not be identified at any point. The study results may be published, and even then, your identity will be preserved.
+
+There will be no cost or financial compensation for participating in the research. You will not receive payment for participating. All information obtained through your participation will be used exclusively for this research and will remain under the responsibility of the lead researcher. If any damage results from your participation, you may request compensation through legal means (Civil Code, Law 10.406/2002, Articles 927 to 954; and CNS Resolution No. 510/2016, Article 19).
+
+The risks include possible tiredness during the tasks and some discomfort associated with the tests. To minimize these risks, the data collection instrument is answered virtually and anonymously. The researchers commit to maintaining confidentiality and data protection to preserve your identity. If you experience emotional discomfort during the test, feel free to contact the researchers at duvidaspsicopatologiacomia@gmail.com and you will receive support from the assistant researcher (a Clinical Psychologist). If necessary, you may receive brief psychotherapeutic guidance and be referred to public psychological services near your residence. The benefits include expanding your understanding of the importance of Artificial Intelligence as a supportive tool in psychological assessment, which may assist mental health professionals in clinical interventions. Research data will be stored physically and digitally for at least 5 (five) years after the end of the study, according to Chapter VI of CNS Resolution 510, April 7, 2016.
+
+You are free to discontinue your participation at any time without any penalty or coercion. Until the study results are published, you may also request the removal of your data from the research. A copy of this Free and Informed Consent Form will remain with you, and you may save it on your device. For questions or complaints regarding the study, you may contact: Dr. Keiji Yamanaka, School of Electrical Engineering, Federal University of Uberlândia. Av. João Naves de Ávila, 2121, Santa Mônica Campus - Federal University of Uberlândia, ZIP 38400-902 - Uberlândia, MG - Brazil - Phone: +55 (34) 3239-4706, or the Psychologist Ms. Résia Silva de Morais at the same address, email: duvidaspsicopatologiacomia@gmail.com. To learn more about research participant rights, access the guidelines at: https://conselho.saude.gov.br/images/comissoes/conep/documentos/Cartilha_Direitos_Eticos_2020.pdf.
+
+You may also contact the Human Research Ethics Committee (CEP) at the Federal University of Uberlândia, located at Av. João Naves de Ávila, 2121, Block A, Room 224, Santa Mônica Campus – Uberlândia/MG, ZIP 38408-100; Phone: +55 (34) 3239-4131; Email: cep@propp.ufu.br. The CEP is an independent committee created to defend the rights, integrity, and dignity of research participants and to ensure that research follows ethical standards established by the National Health Council.
+
+By selecting the option “I Agree” below, you declare that you voluntarily agree to participate in the research after being properly informed by the researchers; that you understand the study; that you may request clarifications at any time via email (duvidaspsicopatologiacomia@gmail.com); and that you may withdraw at any time during or after your participation. You authorize the use of the data collected in this study while maintaining confidentiality of your identity.
 """, textAlign: TextAlign.justify),
           const SizedBox(height: 10.0),
           SingleSelectionList(
             answer: controller.answerAux.value[0]
               ..addListener(() {
-                if (controller.answerAux.value[0].value == 'Concordo') {
+                if (controller.answerAux.value[0].value == 'I Agree') {
                   state.currentState!.didChange(controller.answerAux.value);
                 } else {
                   state.currentState!.didChange([]);
                 }
               }),
             hasPrefiroNaoDizer: false,
-            options: const ['Concordo', 'Não concordo'],
+            options: const ['I Agree', 'I Do Not Agree'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Text("""
-Solicitamos que você salve este documento em seus arquivos. Se desejar receber uma cópia deste registro de consentimento por e-mail, por favor, preencha-o abaixo e clique no botão de enviar:
+Please save this document for your records. If you wish to receive a copy of this consent form via email, please fill in your email below and click the send button:
 """, textAlign: TextAlign.justify),
           const SizedBox(height: 10.0),
           SendEmail(answer: controller.emailAux),
           const Divider(),
           const SizedBox(height: 10.0),
           const Text("""
+  RESEARCHERS’ DECLARATION
 
-  DECLARAÇÃO DOS PESQUISADORES
-
-Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livre e Esclarecido deste participante para a participação neste estudo. Declaramos ainda que nos comprometemos a cumprir todos os termos aqui descritos;
+We declare that we have appropriately and voluntarily obtained the Free and Informed Consent of this participant for this study. We also declare that we commit to complying with all terms described herein.
 """, textAlign: TextAlign.justify),
           const SizedBox(height: 10.0),
           Image.asset(
@@ -106,9 +111,11 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           ),
         ],
   },
+
+  // ----------------------------------------------------------------------
   2: {
     'hasProx': true,
-    'header': 'Questionário Sociodemográfico',
+    'header': 'Sociodemographic Questionnaire',
     'answerLenght': 19,
     'itens':
         (
@@ -121,12 +128,12 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            labelText: 'Que horas são neste instante?',
+            labelText: 'What time is it right now?',
             validator: (value) {
               if (value == null) {
-                return 'Horário Inválido!!';
+                return 'Invalid time!';
               } else if ((value.isEmpty) || (value.length != 5)) {
-                return 'Horário Inválido!!';
+                return 'Invalid time!';
               }
               return null;
             },
@@ -146,12 +153,12 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            labelText: 'Data de hoje?',
+            labelText: 'Today’s date?',
             validator: (value) {
               if (value == null) {
-                return 'Data atual Incorreta!!';
+                return 'Incorrect date!';
               } else if ((value.isEmpty) || (value.length != 10)) {
-                return 'Data atual Incorreta!!';
+                return 'Incorrect date!';
               }
               return null;
             },
@@ -170,7 +177,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            labelText: 'Qual a sua Idade?',
+            labelText: 'How old are you?',
             icon: Icons.cake,
             keyboardType: TextInputType.number,
             inputFormatters: [FilteringTextInputFormatter.digitsOnly],
@@ -179,7 +186,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                   (value.isEmpty) ||
                   (int.parse(value) <= 0) ||
                   (int.parse(value) >= 130)) {
-                return 'Idade invalida!! Corrija por favor';
+                return 'Invalid age! Please correct.';
               }
               return null;
             },
@@ -190,10 +197,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           SingleSelectionList(
             answer: controller.answerAux.value[3]
               ..addListener(() => addListenerComposto(controller, state, 3, 4)),
-            title: 'Gênero *',
+            title: 'Gender *',
             icon: Icons.transgender,
             hasPrefiroNaoDizer: true,
-            options: const ["Feminino", "Masculino"],
+            options: const ["Female", "Male"],
             optionsColumnsSize: 2,
             otherItem: TextFormList(
               answer: controller.answerAux.value[4]
@@ -201,16 +208,16 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                   () =>
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
-              labelText: "Qual o seu gênero?",
+              labelText: "What is your gender?",
               keyboardType: TextInputType.name,
               inputFormatters: [
                 FilteringTextInputFormatter.singleLineFormatter,
               ],
               validator: (String? value) {
                 if (value == null) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description! Please correct.';
                 } else if ((value.isEmpty) || (value.length < 3)) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description! Please correct.';
                 }
                 return null;
               },
@@ -224,10 +231,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'Qual foi o sexo atribuído no seu nascimento?',
+            title: 'What sex was assigned to you at birth?',
             icon: Icons.wc,
             hasPrefiroNaoDizer: false,
-            options: const ["Feminino", "Masculino"],
+            options: const ["Female", "Male"],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
@@ -236,10 +243,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           SingleSelectionList(
             answer: controller.answerAux.value[6]
               ..addListener(() => addListenerComposto(controller, state, 6, 7)),
-            title: "Assinale a alternativa que identifica a sua Cor ou Raça:",
+            title: "Indicate your Race or Ethnicity:",
             icon: Icons.person,
             hasPrefiroNaoDizer: true,
-            options: const ["Preta", "Branca", "Parda", "Amarela", "IndÍgena"],
+            options: const ["Black", "White", "Brown", "Yellow", "Indigenous"],
             optionsColumnsSize: 2,
             otherItem: TextFormList(
               answer: controller.answerAux.value[7]
@@ -248,69 +255,73 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
               keyboardType: TextInputType.name,
-              labelText: "Qual a sua Cor ou Raça ?",
+              labelText: "What is your Race or Ethnicity?",
               inputFormatters: [
                 FilteringTextInputFormatter.singleLineFormatter,
               ],
               validator: (value) {
                 if (value == null) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description! Please correct.';
                 } else if ((value.isEmpty) || (value.length < 3)) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description! Please correct.';
                 }
                 return null;
               },
             ),
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[8]
               ..addListener(() => addListenerComposto(controller, state, 8, 9)),
-            title: "Dentro de sua família, você é o(a) único(a) filho(a)?",
+            title: "Within your family, are you an only child?",
             icon: Icons.diversity_3,
             hasPrefiroNaoDizer: false,
-            options: const ["Sim"],
+            options: const ["Yes"],
             optionsColumnsSize: 2,
-            otherLabel: "Não",
+            otherLabel: "No",
             otherItem: TextFormList(
               answer: controller.answerAux.value[9]
                 ..addListener(
                   () =>
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
-              labelText: "Quantos irmãos você tem?",
+              labelText: "How many siblings do you have?",
               keyboardType: TextInputType.number,
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               validator: (value) {
                 if (value == null) {
-                  return 'Quantidade invalida!! Corrija por favor';
+                  return 'Invalid quantity! Please correct.';
                 } else if ((value.isEmpty)) {
-                  return 'Quantidade invalida!! Corrija por favor';
+                  return 'Invalid quantity! Please correct.';
                 }
                 return null;
               },
             ),
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[10]
               ..addListener(
                 () => addListenerComposto(controller, state, 10, 11),
               ),
-            title: "Qual o seu estado civil?",
+            title: "What is your marital status?",
             icon: Icons.diversity_2,
             hasPrefiroNaoDizer: false,
             optionsColumnsSize: 2,
             options: const [
-              "Solteiro (a):",
-              "Casado (a)",
-              "Viúvo (a)",
-              "Divorciado(a)",
-              "Amaziado",
+              "Single",
+              "Married",
+              "Widowed",
+              "Divorced",
+              "Common-law union",
             ],
             otherItem: TextFormList(
               answer: controller.answerAux.value[11]
@@ -318,153 +329,163 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                   () =>
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
-              labelText: "Qual estado civil ?",
+              labelText: "Specify your marital status:",
               keyboardType: TextInputType.name,
               inputFormatters: [
                 FilteringTextInputFormatter.singleLineFormatter,
               ],
               validator: (value) {
                 if (value == null) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description! Please correct.';
                 } else if ((value.isEmpty) || (value.length < 3)) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description! Please correct.';
                 }
                 return null;
               },
             ),
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[12]
               ..addListener(
                 () => addListenerComposto(controller, state, 12, 13),
               ),
-            title: "Possui filhos(as)?",
+            title: "Do you have children?",
             icon: Icons.group_add,
             hasPrefiroNaoDizer: false,
             optionsColumnsSize: 2,
-            options: const ["Não"],
-            otherLabel: "Sim",
+            options: const ["No"],
+            otherLabel: "Yes",
             otherItem: TextFormList(
               answer: controller.answerAux.value[13]
                 ..addListener(
                   () =>
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
-              labelText: "Quantos filhos você tem?",
+              labelText: "How many children do you have?",
               keyboardType: TextInputType.number,
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               validator: (value) {
                 if (value == null) {
-                  return 'Quantidade invalida!! Corrija por favor';
+                  return 'Invalid quantity! Please correct.';
                 } else if ((value.isEmpty)) {
-                  return 'Quantidade invalida!! Corrija por favor';
+                  return 'Invalid quantity! Please correct.';
                 }
                 return null;
               },
             ),
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[14]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: "Possui filhos(as) menores de 6 anos?",
+            title: "Do you have children under 6 years old?",
             icon: Icons.child_friendly,
             hasPrefiroNaoDizer: false,
             optionsColumnsSize: 2,
-            options: const ["Não", "Sim"],
+            options: const ["No", "Yes"],
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[15]
               ..addListener(
                 () => addListenerComposto(controller, state, 15, 16),
               ),
-            title: "Religião *",
+            title: "Religion *",
             icon: Icons.church,
             hasPrefiroNaoDizer: false,
             optionsColumnsSize: 2,
-            options: const ["Sem religião"],
-            otherLabel: "Tenho religião",
+            options: const ["No religion"],
+            otherLabel: "I have a religion",
             otherItem: TextFormList(
               answer: controller.answerAux.value[16]
                 ..addListener(
                   () =>
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
-              labelText: "Qual é a Religião?",
+              labelText: "Which religion?",
               keyboardType: TextInputType.name,
               inputFormatters: [
                 FilteringTextInputFormatter.singleLineFormatter,
               ],
               validator: (value) {
                 if (value == null) {
-                  return 'Religião invalida!! Corrija por favor';
+                  return 'Invalid religion! Please correct.';
                 } else if ((value.isEmpty)) {
-                  return 'Religião invalida!! Corrija por favor';
+                  return 'Invalid religion! Please correct.';
                 }
                 return null;
               },
             ),
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[17]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: "Escolaridade *",
+            title: "Education *",
             icon: Icons.school,
             hasPrefiroNaoDizer: false,
             options: const [
-              "Sem Escolaridade",
-              "Ensino Fundamental (1º grau) incompleto",
-              "Ensino Fundamental (1º grau) completo",
-              "Ensino Médio (2º grau) incompleto",
-              "Ensino Médio (2º grau) completo",
-              "Superior Incompleto",
-              "Superior Completo",
-              "Mestrado",
-              "Doutorado",
+              "No schooling",
+              "Elementary School (1st level) incomplete",
+              "Elementary School (1st level) complete",
+              "High School (2nd level) incomplete",
+              "High School (2nd level) complete",
+              "Undergraduate incomplete",
+              "Undergraduate complete",
+              "Master’s degree",
+              "Doctorate",
             ],
           ),
+
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[18]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: "Renda familiar mensal de sua casa (somatória)",
+            title: "Your household’s monthly family income",
             icon: Icons.attach_money,
             hasPrefiroNaoDizer: false,
             options: const [
-              "Até 1 salário mínimo",
-              "Mais de 1 a 2 salários mínimos",
-              "Mais de 2 a 3 salários mínimos",
-              "Mais de 3 a 5 salários mínimos",
-              "Mais de 5 a 8 salários mínimos",
-              "Mais de 8 a 12 salários mínimos",
-              "Mais de 12 a 20 salários mínimos",
-              "Mais de 20 salários mínimos",
+              "Up to 1 minimum wage",
+              "More than 1 to 2 minimum wages",
+              "More than 2 to 3 minimum wages",
+              "More than 3 to 5 minimum wages",
+              "More than 5 to 8 minimum wages",
+              "More than 8 to 12 minimum wages",
+              "More than 12 to 20 minimum wages",
+              "More than 20 minimum wages",
             ],
           ),
         ],
   },
   3: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 3,
     'itens':
         (
@@ -475,34 +496,33 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
             answer: controller.answerAux.value[0]
               ..addListener(() => addListenerComposto(controller, state, 0, 1)),
             title:
-                'Você possui algum diagnóstico em relação ao seu estado de saúde mental, laudado por um profissional da saúde?',
+                'Do you have any mental health diagnosis confirmed by a licensed health professional?',
             optionsColumnsSize: 2,
             hasPrefiroNaoDizer: false,
-            options: const ["Não"],
-            otherLabel: "Sim",
+            options: const ["No"],
+            otherLabel: "Yes",
             otherItem: SingleSelectionList(
               answer: controller.answerAux.value[1]
                 ..addListener(
                   () => addListenerComposto(controller, state, 1, 2),
                 ),
-              title:
-                  "\nCaso afirmativo, selecione o diagnóstico\n correspondente.",
+              title: "\nIf yes, select the corresponding diagnosis.",
               icon: Icons.admin_panel_settings,
               hasPrefiroNaoDizer: false,
               options: const [
-                "Transtorno do Espectro Autista",
-                "Transtornos Depressivos",
-                "Transtorno Ciclotímico",
-                "Transtornos de Ansiedade",
-                "Transtorno de Estresse Pós-traumático",
-                "Transtornos Alimentares",
-                "Transtorno Bipolar",
-                "Transtorno Obsessivo-compulsivo",
-                "Transtorno de Déficit de Atenção/Hiperatividade",
-                "Transtorno da Personalidade Borderline",
-                "Transtorno do Espectro da Esquizofrenia e Outros Transtornos Psicóticos",
+                "Autism Spectrum Disorder",
+                "Depressive Disorders",
+                "Cyclothymic Disorder",
+                "Anxiety Disorders",
+                "Post-traumatic Stress Disorder",
+                "Eating Disorders",
+                "Bipolar Disorder",
+                "Obsessive-Compulsive Disorder",
+                "Attention-Deficit/Hyperactivity Disorder",
+                "Borderline Personality Disorder",
+                "Schizophrenia Spectrum and Other Psychotic Disorders",
               ],
-              otherLabel: "Outro tipo de transtorno",
+              otherLabel: "Other disorder",
               otherItem: TextFormList(
                 answer: controller.answerAux.value[2]
                   ..addListener(
@@ -510,17 +530,16 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                       controller.answerAux.value,
                     ),
                   ),
-                labelText:
-                    'Digite a denominação desse outro tipo de transtorno',
+                labelText: 'Type the name of this other disorder',
                 keyboardType: TextInputType.name,
                 inputFormatters: [
                   FilteringTextInputFormatter.singleLineFormatter,
                 ],
                 validator: (value) {
                   if (value == null) {
-                    return 'Digite a denominação desse outro tipo de transtorno';
+                    return 'Please type the name of this disorder';
                   } else if (value.length < 4) {
-                    return 'Digite a denominação desse outro tipo de transtorno';
+                    return 'Please type the name of this disorder';
                   }
                   return null;
                 },
@@ -529,31 +548,34 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           ),
         ],
   },
+
   4: {
     'hasProx': true,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            'A partir de agora serão apresentadas telas com as instruções das tarefas que você irá responder.\r\n\nCertifique-se que esteja em um ambiente silencioso, sem estímulos de distração.\f\n\nEm algumas telas, sons serão reproduzidos; portanto, é fundamental usar fones de ouvido ou ligar os alto-falantes do seu dispositivo.',
+            'From this point on, screens will be presented with the instructions for the tasks you will answer.\r\n\nMake sure you are in a quiet environment, free from distractions.\f\n\nIn some screens, sounds will be played; therefore, it is essential to use headphones or turn on your device speakers.',
         bodyHasFrame: false,
       ),
     ],
   },
+
   5: {
     'hasProx': true,
-    'header': 'Informações',
+    'header': 'Information',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
-        body: 'Olhe atentamente para a figura apresentada na proxima tela.',
+        body: 'Look carefully at the figure presented on the next screen.',
         bodyHasFrame: false,
       ),
     ],
   },
+
   6: {
     'hasProx': false,
     'header': 'Observe',
@@ -573,9 +595,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
       ),
     ],
   },
+
   7: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -587,33 +610,35 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'O que você viu na tela anterior?',
+            title: 'What did you see on the previous screen?',
             icon: Icons.question_answer,
             hasPrefiroNaoDizer: false,
             options: const [
-              "Jesus Cristo",
-              "Coração",
-              "Dragão cuspindo fogo",
-              "Árvore",
-              "Não vi nada",
-              "Outra coisa",
+              "Jesus Christ",
+              "Heart",
+              "Dragon breathing fire",
+              "Tree",
+              "I didn’t see anything",
+              "Something else",
             ],
             optionsColumnsSize: 2,
           ),
         ],
   },
+
   8: {
     'hasProx': true,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
-        body: 'Olhe atentamente para a figura apresentada na proxima tela.',
+        body: 'Look carefully at the figure presented on the next screen.',
         bodyHasFrame: false,
       ),
     ],
   },
+
   9: {
     'hasProx': false,
     'header': 'Observe',
@@ -621,9 +646,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
     'answerLenght': 0,
     'itens': (_, __) => [const DisplayFrame(body: '', bodyHasFrame: true)],
   },
+
   10: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -635,34 +661,36 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'O que você viu na tela anterior?',
+            title: 'What did you see on the previous screen?',
             icon: Icons.timelapse,
             hasPrefiroNaoDizer: false,
             options: const [
-              "Jesus Cristo",
-              "Coração",
-              "Dragão cuspindo fogo",
-              "Árvore",
-              "Não vi nada",
-              "Outra coisa",
+              "Jesus Christ",
+              "Heart",
+              "Dragon breathing fire",
+              "Tree",
+              "I didn’t see anything",
+              "Something else",
             ],
             optionsColumnsSize: 2,
           ),
         ],
   },
+
   11: {
     'hasProx': true,
-    'header': 'Informações',
+    'header': 'Information',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            "Nas próximas telas, serão apresentadas algumas sequências de números, após visualizá-las você deverá marcar a resposta que corresponde à sequência correta.",
+            "On the next screens, some number sequences will be presented. After viewing them, you must select the answer that corresponds to the correct sequence.",
         bodyHasFrame: false,
       ),
     ],
   },
+
   12: {
     'hasProx': false,
     'header': '',
@@ -670,9 +698,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
     'answerLenght': 1,
     'itens': (_, __) => [const DisplayFrame(body: '2 - 7', bodyHasFrame: true)],
   },
+
   13: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -685,7 +714,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Qual foi a sequência correta dos números apresentados na tela anterior?',
+                'What was the correct sequence of numbers shown on the previous screen?',
             icon: Icons.timeline,
             hasPrefiroNaoDizer: false,
             options: const [
@@ -700,6 +729,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           ),
         ],
   },
+
   14: {
     'hasProx': false,
     'header': '',
@@ -709,9 +739,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
       const DisplayFrame(body: '5 - 6 - 4', bodyHasFrame: true),
     ],
   },
+
   15: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -724,7 +755,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Qual foi a sequência correta dos números apresentados na tela anterior?',
+                'What was the correct sequence of numbers shown on the previous screen?',
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
@@ -739,6 +770,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           ),
         ],
   },
+
   16: {
     'hasProx': false,
     'header': '',
@@ -748,9 +780,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
       const DisplayFrame(body: '6 - 4 - 3 - 9', bodyHasFrame: true),
     ],
   },
+
   17: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -763,7 +796,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Qual foi a sequência correta dos números apresentados na tela anterior?',
+                'What was the correct sequence of numbers shown on the previous screen?',
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
@@ -778,6 +811,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           ),
         ],
   },
+
   18: {
     'hasProx': false,
     'header': '',
@@ -787,9 +821,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
       const DisplayFrame(body: '4 - 2 - 7 - 3 - 1', bodyHasFrame: true),
     ],
   },
+
   19: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -802,7 +837,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Qual foi a sequência correta dos números apresentados na tela anterior?',
+                'What was the correct sequence of numbers shown on the previous screen?',
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
@@ -828,7 +863,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   21: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -841,7 +876,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Qual foi a sequência correta dos números apresentados na tela anterior?',
+                'What was the correct sequence of numbers shown on the previous screen?',
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
@@ -867,7 +902,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   23: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -880,7 +915,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Qual foi a sequência correta dos números apresentados na tela anterior?',
+                'What was the correct sequence of numbers shown on the previous screen?',
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
@@ -897,13 +932,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   24: {
     'hasProx': true,
-    'header': 'Informações',
+    'header': 'Information',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            "Por favor, identifique expressões e intenções das pessoas levando em consideração apenas a região dos olhos. Para cada imagem, selecione a palavra que melhor descreve os sentimentos, pensamentos ou impressões que a pessoa em questão está transmitindo.",
+            "Please identify the expressions and intentions of the people by considering only the eye region. For each image, select the word that best describes the feelings, thoughts, or impressions the person seems to be expressing.",
         bodyHasFrame: false,
       ),
     ],
@@ -911,7 +946,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   25: {
     'hasProx': true,
     'header':
-        'Dentre as quatro alternativas de cada imagem. Selecione a palavra que melhor a descreve',
+        'Among the four alternatives in each image, select the word that best describes it.',
     'answerLenght': 14,
     'itens':
         (
@@ -928,16 +963,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
-              'Inquieto(a)',
-              'Pensativo(a)',
-              'Irritado(a)',
-              'Desconfiado(a)',
+              'Restless',
+              'Thoughtful',
+              'Irritated',
+              'Suspicious',
             ],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho2.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -947,17 +983,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Nervoso(a)',
-              'Deprimido(a)',
-              'Irritado(a)',
-              'Divertido(a)',
-            ],
+            options: const ['Nervous', 'Depressed', 'Irritated', 'Amused'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho3.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -967,17 +999,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Envergonhado(a)',
-              'Divertido(a)',
-              'Interessado(a)',
-              'Deprimido(a)',
-            ],
+            options: const ['Embarrassed', 'Amused', 'Interested', 'Depressed'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho4.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -987,17 +1015,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Arrogante',
-              'Decidido(a)',
-              'Apavorado(a)',
-              'Chateado(a)',
-            ],
+            options: const ['Arrogant', 'Determined', 'Terrified', 'Upset'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho5.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1007,17 +1031,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Amável',
-              'Decidido(a)',
-              'Simpático(a)',
-              'Deprimido(a)',
-            ],
+            options: const ['Kind', 'Determined', 'Friendly', 'Depressed'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho6.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1027,17 +1047,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Tímido(a)',
-              'Perturbado(a)',
-              'Desanimado(a)',
-              'Pensativo(a)',
-            ],
+            options: const ['Shy', 'Disturbed', 'Discouraged', 'Thoughtful'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho7.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1048,16 +1064,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
-              'Impaciente ',
-              'Desanimado(a)',
-              'Sedutor(a)',
-              'Aliviado(a)',
+              'Impatient',
+              'Discouraged',
+              'Seductive',
+              'Relieved',
             ],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho8.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1067,17 +1084,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Grato(a)',
-              'Sonhador(a)',
-              'Desanimado(a)',
-              'Chocado(a)',
-            ],
+            options: const ['Grateful', 'Dreamy', 'Discouraged', 'Shocked'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho9.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1088,16 +1101,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
-              'Satisfeito(a)',
-              'Preocupado(a)',
-              'Afetuoso(a)',
-              'Indiferente',
+              'Satisfied',
+              'Worried',
+              'Affectionate',
+              'Indifferent',
             ],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho10.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1107,17 +1121,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Amável',
-              'Arrependido(a)',
-              'Zangado(a)',
-              'Simpático(a)',
-            ],
+            options: const ['Kind', 'Regretful', 'Angry', 'Friendly'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho11.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1127,17 +1137,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Desconfortável',
-              'Entediado(a)',
-              'Confiante',
-              'Impaciente',
-            ],
+            options: const ['Uncomfortable', 'Bored', 'Confident', 'Impatient'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho12.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1147,17 +1153,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Arrependido(a)',
-              'Nervoso(a)',
-              'Divertido(a)',
-              'Envergonhado(a)',
-            ],
+            options: const ['Regretful', 'Nervous', 'Amused', 'Embarrassed'],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho13.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1168,16 +1170,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
             options: const [
-              'Amigável',
-              'Entretido(a)',
-              'Desconfiado(a)',
-              'Sedutor(a)',
+              'Friendly',
+              'Entertained',
+              'Suspicious',
+              'Seductive',
             ],
             optionsColumnsSize: 2,
           ),
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           const DisplayFrame(body: 'assets/olho14.png', bodyHasFrame: true),
           const SizedBox(height: 10.0),
           SingleSelectionList(
@@ -1187,19 +1190,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             hasPrefiroNaoDizer: false,
-            options: const [
-              'Preocupado(a)',
-              'Cauteloso(a)',
-              'Hostil',
-              'Divertido(a)',
-            ],
+            options: const ['Worried', 'Cautious', 'Hostile', 'Amused'],
             optionsColumnsSize: 2,
           ),
         ],
   },
   26: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1212,19 +1210,19 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Tem sentido muito medo de perder o controle ou enlouquecer?',
-              'Para impedir o ganho de peso, há uso de laxantes, diuréticos ou outros medicamentos; jejum, vômitos autoinduzidos, ou exercício físico em excesso?',
-              'Sente medo intenso de ganhar peso ou de engordar, ao ponto de não comer?',
-              'Há ingestão persistente de substâncias não nutritivas tais como doces e/ou chocolates, durante um período mínimo de um mês?',
-              'Você se irrita fácil, de forma que seu humor muda facilmente durante o dia?',
-              'Já teve ataques ou crises de medo intenso nos quais se sentiu muito mal?',
+              'Have you felt intense fear of losing control or going crazy?',
+              'To prevent weight gain, do you use laxatives, diuretics, or other medications; fasting, self-induced vomiting, or excessive exercise?',
+              'Do you feel intense fear of gaining weight or getting fat, to the point of not eating?',
+              'Do you have persistent ingestion of non-nutritive substances such as sweets and/or chocolate for a minimum period of one month?',
+              'Do you get irritated easily, so that your mood changes quickly during the day?',
+              'Have you had episodes of intense fear or panic that made you feel very unwell?',
             ],
           ),
         ],
   },
   27: {
     'hasProx': true,
-    'header': 'Qual das imagens abaixo completa a sequência a seguir?',
+    'header': 'Which of the images below completes the sequence?',
     'answerLenght': 1,
     'itens':
         (
@@ -1255,7 +1253,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   28: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1268,20 +1266,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Ultimamente tem arrancado o próprio cabelo de forma recorrente, resultando em perda de cabelo?',
-              'Observou grande perda de interesse ou prazer em todas ou quase todas as atividades na maior parte do dia; sente-se triste, vazio, sem esperança?',
-              'Você se sente incomodado por pensamentos que surgem em sua mente, mesmo quando não os deseja, como o medo de estar exposto a germes, doenças ou sujeira, ou a necessidade de que tudo esteja alinhado de certa maneira?',
-              'Você é incomodado por imagens indesejadas que surgem em sua mente, como cenas violentas e horríveis, ou conteúdo de natureza sexual?',
-              'Percebo que sou uma pessoa especial e único/a? Espero que um dia as pessoas possam reconhecer meu valor e a diferença que faço na vida delas.',
-              'Tende a se enxergar como alguém socialmente incapaz, sem atrativos pessoais ou inferior aos outros?',
-              'Possui dificuldade em iniciar projetos ou fazer as coisas sozinho (por falta de autoconfiança, em vez de falta de motivação ou energia)?',
+              'Have you recently pulled your own hair repeatedly, resulting in hair loss?',
+              'Have you experienced a great loss of interest or pleasure in all or almost all activities most of the day; feeling sad, empty, or hopeless?',
+              'Are you bothered by thoughts that come into your mind even when you do not want them, such as fear of being exposed to germs, diseases, or dirt, or the need for everything to be arranged in a certain way?',
+              'Are you bothered by unwanted images in your mind, such as violent and horrible scenes, or content of a sexual nature?',
+              'Do you feel that you are a special and unique person? Do you hope that one day people will recognize your value and the difference you make in their lives?',
+              'Do you tend to see yourself as socially incapable, lacking personal appeal, or inferior to others?',
+              'Do you have difficulty initiating projects or doing things alone (due to lack of self-confidence rather than lack of motivation or energy)?',
             ],
           ),
         ],
   },
   29: {
     'hasProx': true,
-    'header': 'Complete as sequências a seguir:',
+    'header': 'Complete the following sequences:',
     'answerLenght': 4,
     'itens':
         (
@@ -1295,13 +1293,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.confirmation_num,
             title: '2, 4, 8, 16, ?',
-            labelText: "Sequência *",
+            labelText: "Sequence *",
             optionsColumnsSize: 1,
             validator: (value) {
               if (value == null) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               } else if (value.isEmpty) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               }
               return null;
             },
@@ -1311,6 +1309,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[1]
               ..addListener(
@@ -1318,13 +1317,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.confirmation_num,
             title: '1, 3, 9, ?',
-            labelText: "Sequência *",
+            labelText: "Sequence *",
             optionsColumnsSize: 1,
             validator: (value) {
               if (value == null) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               } else if (value.isEmpty) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               }
               return null;
             },
@@ -1334,6 +1333,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[2]
               ..addListener(
@@ -1341,13 +1341,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.confirmation_num,
             title: '3, 7, 11, 15, ? ',
-            labelText: "Sequência *",
+            labelText: "Sequence *",
             optionsColumnsSize: 1,
             validator: (value) {
               if (value == null) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               } else if (value.isEmpty) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               }
               return null;
             },
@@ -1357,6 +1357,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[3]
               ..addListener(
@@ -1364,13 +1365,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.confirmation_num,
             title: '32, 16, 8, ? ',
-            labelText: "Sequência *",
+            labelText: "Sequence *",
             optionsColumnsSize: 1,
             validator: (value) {
               if (value == null) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               } else if (value.isEmpty) {
-                return 'Horário Inválido!!';
+                return 'Invalid value!';
               }
               return null;
             },
@@ -1382,10 +1383,11 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
         ],
   },
+
   30: {
-    //Para inserir caracters em String use: "\u{0x___}"
+    //To insert characters in a String use: "\u{0x___}"
     'hasProx': true,
-    'header': 'Observe as palavras a seguir:',
+    'header': 'Observe the words below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1398,7 +1400,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                '\n1)\tMUITOS\n2)\tOCEANO\n3)\tPEIXES\n4)\tE\n5)\tTEM\n6)\tO\n7)\tPLANTAS\n\nAgora forme uma frase que faça sentido e contenha todas essas palavras. Marque a ordem correta:',
+                '\n1)\tMANY\n2)\tOCEAN\n3)\tFISH\n4)\tAND\n5)\tHAS\n6)\tTHE\n7)\tPLANTS\n\nNow form a meaningful sentence containing all these words. Select the correct order:',
             hasPrefiroNaoDizer: false,
             options: const [
               '1 - 4 - 6 - 2 - 5 - 3 - 7',
@@ -1413,7 +1415,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   31: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1426,12 +1428,12 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Sente algo estranho dentro do seu corpo, e/ou movimentos, como se levasse um empurrão?',
-              'Sente como se alguém lhe tocasse, beliscassem, batessem ou beijassem seu corpo?',
-              'Possui a sensação de falta de controle durante a alimentação; não consegue parar de comer ou controlar a quantidade que está ingerindo?',
-              'Sente-se descansado e preparado para mais um dia, mesmo com apenas 3 horas de sono?',
-              'Você com frequência tem dificuldade em manter-se concentrado durante a realização de tarefas ou atividades?',
-              'Muitas vezes responde precipitadamente antes que as perguntas tenham sido completadas.',
+              'Do you feel something strange inside your body, such as movements or pushes?',
+              'Do you feel as if someone touches, pinches, hits, or kisses your body?',
+              'Do you feel a lack of control while eating; unable to stop or control the amount you eat?',
+              'Do you feel rested and ready for the day even after only 3 hours of sleep?',
+              'Do you frequently have difficulty staying focused during tasks or activities?',
+              'Do you often answer questions hastily before they have been fully asked?',
             ],
           ),
         ],
@@ -1439,7 +1441,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   32: {
     'hasProx': true,
     'header':
-        'Preencha o campo a seguir com o nome da cidade e estado onde você está agora.',
+        'Fill in the field below with the city and state where you are now.',
     'answerLenght': 2,
     'itens':
         (
@@ -1452,13 +1454,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             icon: Icons.location_city,
-            labelText: 'CIDADE:',
+            labelText: 'CITY:',
             optionsColumnsSize: 1,
             validator: (value) {
               if (value == null) {
-                return 'Cidade Inválida!!';
+                return 'Invalid City!!';
               } else if (value.isEmpty) {
-                return 'Cidade Inválida!!';
+                return 'Invalid City!!';
               }
               return null;
             },
@@ -1474,13 +1476,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             icon: Icons.location_history,
-            labelText: 'ESTADO:',
+            labelText: 'STATE:',
             optionsColumnsSize: 1,
             validator: (value) {
               if (value == null) {
-                return 'Estado Inválido!!';
+                return 'Invalid State!!';
               } else if (value.isEmpty) {
-                return 'Estado Inválido!!';
+                return 'Invalid State!!';
               }
               return null;
             },
@@ -1491,7 +1493,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   33: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -1503,14 +1505,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'Selecione qual o período do dia atual ?',
+            title: 'Select the current time period of the day:',
             icon: Icons.timer_outlined,
             hasPrefiroNaoDizer: false,
             options: const [
-              'Manhã: 6:00 às 11:59 horas',
-              'Tarde: 12:00 às 17:59 horas',
-              'Noite: 18:00 às 23:59 horas',
-              'Madrugada: 00:00 às 05:59 horas',
+              'Morning: 6:00 to 11:59',
+              'Afternoon: 12:00 to 17:59',
+              'Evening: 18:00 to 23:59',
+              'Dawn: 00:00 to 05:59',
             ],
             optionsColumnsSize: 1,
           ),
@@ -1518,20 +1520,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   34: {
     'hasProx': true,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            'Seis (6) imagens serão apresentadas. Fique atendo! Em um certo momento do teste, elas serão escondidas em uma figura e você deverá encontrá-las.',
+            'Six (6) images will be displayed. Stay alert! At a certain point in the test, they will be hidden inside a picture and you will need to find them.',
         bodyHasFrame: false,
       ),
     ],
   },
   35: {
     'hasProx': false,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'answerLenght': 0,
     'itens': (TelasController controller, __) => [
       DisplayFrame(
@@ -1550,7 +1552,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   36: {
     'hasProx': false,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'answerLenght': 0,
     'itens': (TelasController controller, __) => [
       DisplayFrame(
@@ -1569,7 +1571,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   37: {
     'hasProx': false,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'answerLenght': 0,
     'itens': (TelasController controller, __) => [
       DisplayFrame(
@@ -1588,7 +1590,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   38: {
     'hasProx': false,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'answerLenght': 0,
     'itens': (TelasController controller, __) => [
       DisplayFrame(
@@ -1607,7 +1609,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   39: {
     'hasProx': false,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'answerLenght': 0,
     'itens': (TelasController controller, __) => [
       DisplayFrame(
@@ -1624,9 +1626,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
       ),
     ],
   },
+
   40: {
     'hasProx': false,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'answerLenght': 0,
     'itens': (TelasController controller, __) => [
       DisplayFrame(
@@ -1645,7 +1648,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   41: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1658,20 +1661,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Diariamente, há momentos em que você sente como se o chão oscilasse?',
-              'Durante o dia há vários momentos em que você se sente irritado(a) e impaciente?',
-              'Diariamente, há momentos em que você se sente muito feliz, irradiante?',
-              'Durante o dia há vários momentos em que você se sente triste e/ou melancólico(a)?',
-              'Tem notado(a) muita preocupação com um ou mais defeitos ou falhas percebidas na aparência física que não são observáveis ou que parecem leves para os outros.',
-              'Você com frequência mexe de forma irrequieta as mãos e os pés ou remexe-se na cadeira quando está sentado(a)?',
-              'Exibe dificuldade em concordar com as ideias de outras pessoas, demonstrando inflexibilidade e rigidez tanto em relação a si mesmo quanto aos outros.',
+              'Daily, are there moments when you feel as if the ground is shaking?',
+              'During the day, do you often feel irritated and impatient?',
+              'Daily, are there moments when you feel very happy, radiant?',
+              'During the day, are there several moments when you feel sad and/or melancholic?',
+              'Have you noticed excessive concern about one or more perceived defects in your physical appearance that are not observable or appear minor to others?',
+              'Do you often fidget with your hands or feet, or squirm in your seat while sitting?',
+              'Do you show difficulty agreeing with the ideas of others, demonstrating inflexibility and rigidity toward yourself and others?',
             ],
           ),
         ],
   },
   42: {
     'hasProx': true,
-    'header': 'Encontre os objetos!',
+    'header': 'Find the objects!',
     'answerLenght': 1,
     'itens':
         (
@@ -1680,7 +1683,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
         ) => [
           const DisplayFrame(
             body:
-                'Seis (6) imagens foram apresentadas em algum momento do teste. Vamos encontrá-los? Clique nas figuras que você lembrou. Não é obrigado(a) a encontrar todas as imagens. Faça o seu melhor!\n',
+                'Six (6) images were shown earlier in the test. Can you find them? Click on the images you remember. You are not required to find them all. Do your best!\n',
             bodyHasFrame: false,
           ),
           const SizedBox(height: 10.0),
@@ -1695,7 +1698,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   43: {
     'hasProx': true,
-    'header': 'Avalie e responda !!',
+    'header': 'Evaluate and answer!!',
     'answerLenght': 1,
     'itens':
         (
@@ -1710,28 +1713,27 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                "\nSe tivesse a oportunidade de, por alguns minutos, adquirir conhecimento sobre alguém ou algo por meio de uma abertura no tempo e espaço, quais das ações a seguir você optaria por realizar? Escolha duas ou três opções que mais se adequariam a você.\n",
-            //icon: Icons.more_time,
+                "\nIf you had the opportunity, for a few minutes, to gain knowledge about someone or something through an opening in time and space, which of the following actions would you choose? Pick two or three options that best match you.\n",
             options: const [
-              'Encontrar-se com um ente querido falecido.',
-              'Ver uma pessoa nua',
-              'Saber como desempenhar tarefas cotidianas sem ser prejudicado por pensamentos incessantes que me limitam.',
-              'Voltar na minha infância e recomeçar tudo',
-              'Voltar na minha adolescência e recomeçar tudo',
-              'Saber se meu namorado (a) ou esposo (a) está me traindo',
-              'Saber como poderia ser o futuro da minha família e ajudá-los',
-              'Desaparecer no tempo e espaço, ao entrar pela fenda',
-              'Saber se estarei vivo daqui 5 anos.',
-              'Saber quem é minha alma gêmea',
-              'Ver meu futuro profissional',
-              'Saber como faço para não pensar coisas bizarras',
-              'Testemunhar avanços tecnológicos futuros.',
-              'Presenciar um evento histórico de grande relevância, como a construção das pirâmides do Egito, a Grande Muralha da China, a era dos dinossauros, ou a criação de alguma das invenções de Albert Einstein ou Leonardo da Vinci, por exemplo.',
-              'Saber se ficarei rico(a)',
-              'Saber quem está me perseguindo na rua',
-              'Saber como faço para dormir a noite toda.',
-              'Saber como fazer meu cônjuge e/ou filho(a) a realizar tarefas e tomar decisões em suas vidas de acordo com meus valores e princípios.',
-              'Saber como desaparecer minha dor e sofrimento existencial.',
+              'Meet with a deceased loved one.',
+              'See a person naked.',
+              'Know how to perform daily tasks without being harmed by incessant thoughts that limit me.',
+              'Go back to my childhood and start everything over.',
+              'Go back to my teenage years and start everything over.',
+              'Know whether my boyfriend/girlfriend or spouse is cheating on me.',
+              'Know what my family’s future will be like and help them.',
+              'Disappear into time and space by entering the rift.',
+              'Know if I will be alive five years from now.',
+              'Know who my soulmate is.',
+              'See my professional future.',
+              'Know how to stop thinking bizarre things.',
+              'Witness future technological advancements.',
+              'Witness a major historical event, such as the building of the Egyptian pyramids, the Great Wall of China, the age of dinosaurs, or inventions by Albert Einstein or Leonardo da Vinci.',
+              'Know if I will become rich.',
+              'Know who is following me on the street.',
+              'Know how to sleep through the whole night.',
+              'Know how to make my spouse and/or child make choices based on my values and principles.',
+              'Know how to make my existential pain and suffering disappear.',
             ],
             optionsColumnsSize: 1,
             mimSizeAnswer: 2,
@@ -1741,7 +1743,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   44: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1754,31 +1756,31 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Percebe-se impulsivo(a) e de forma abusiva; p. ex., gastos exagerados, sexo com desconhecidos, abuso de substâncias, dirigir de forma perigosa/irresponsável e/ou atos repetitivos de autolesão?',
-              'Tem dificuldade em terminar o que começa?',
-              'Quando você conta uma história que aconteceu, na maioria das vezes você exagera e dramatiza alguns detalhes?',
-              'Já testemunhou e/ou ainda é exposto(a) de forma repetida ou extrema a detalhes aversivos do evento traumático?',
-              'Você apresenta explosões de raiva recorrente, manifestadas por meio da linguagem (como insultos dirigidos a outras pessoas) ou através de ações (como agressão física)?',
-              'Você está tendo insônia praticamente todos os dias?',
+              'Do you perceive yourself as impulsive and reckless; e.g., excessive spending, sex with strangers, substance abuse, reckless driving, or repetitive self-harm?',
+              'Do you have difficulty finishing what you start?',
+              'When you tell a story about something that happened, do you often exaggerate or dramatize details?',
+              'Have you witnessed or still been repeatedly or intensely exposed to aversive details of a traumatic event?',
+              'Do you have recurrent outbursts of anger, expressed verbally (such as insults) or physically (such as aggression)?',
+              'Are you experiencing insomnia almost every day?',
             ],
           ),
         ],
   },
   45: {
     'hasProx': true,
-    'header': 'Atenção !!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
-        body: 'Atente-se ao som que será reproduzido na próxima tela.',
+        body: 'Pay attention to the sound that will play on the next screen.',
         bodyHasFrame: false,
       ),
     ],
   },
   46: {
     'hasProx': false,
-    'header': 'Pressione o play para escutar !!',
+    'header': 'Press play to listen!!',
     'answerLenght': 0,
     'itens':
         (
@@ -1795,7 +1797,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   47: {
     'hasProx': true,
-    'header': 'Responda !!',
+    'header': 'Answer !!',
     'answerLenght': 1,
     'itens':
         (
@@ -1807,15 +1809,15 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'Qual das opções corresponde ao som escutado?',
+            title: 'Which option matches the sound you heard?',
             hasPrefiroNaoDizer: false,
             options: const [
-              "Pássaros",
-              "Barulho de água",
-              "Aspirador de pó",
-              "Choro de criança",
-              "Telefone tocando",
-              "Sem som",
+              "Birds",
+              "Water sound",
+              "Vacuum cleaner",
+              "Child crying",
+              "Phone ringing",
+              "No sound",
             ],
             optionsColumnsSize: 2,
           ),
@@ -1823,7 +1825,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   48: {
     'hasProx': true,
-    'header': 'Observe e responda',
+    'header': 'Observe and answer',
     'answerLenght': 1,
     'itens':
         (
@@ -1838,12 +1840,12 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Selecione qual alternativa corresponde ao que você vê na imagem acima.',
+                'Select the option that corresponds to what you see in the image above.',
             icon: Icons.more_time,
             options: const [
-              'A Reta A é maior que a Reta B',
-              'A Reta A é menor que a Reta B',
-              'Retas A e B, são do mesmo tamanho',
+              'Line A is longer than Line B',
+              'Line A is shorter than Line B',
+              'Lines A and B are the same size',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -1852,7 +1854,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   49: {
     'hasProx': true,
-    'header': 'Desenhe !!',
+    'header': 'Draw !!',
     'answerLenght': 3,
     'itens':
         (
@@ -1862,9 +1864,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           SingleSelectionList(
             answer: controller.answerAux.value[0]
               ..addListener(() {
-                if (controller.answerAux.value[0].value == 'Não desejo fazer') {
-                  controller.answerAux.value[1].value = 'Sucess';
-                  controller.answerAux.value[2].value = 'Sucess';
+                if (controller.answerAux.value[0].value ==
+                    'I do not wish to do it') {
+                  controller.answerAux.value[1].value = 'Success';
+                  controller.answerAux.value[2].value = 'Success';
                   state.currentState!.didChange(controller.answerAux.value);
                 } else {
                   addListenerComposto(controller, state, 0, 1);
@@ -1872,14 +1875,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 }
               }),
             title:
-                'Serão exibidos diversos pontos e ao clicar sobre estes pontos, você poderá compor imagens, uma vez que os pontos serão conectados por linhas retas. Escolha uma das sugestões fornecidas, selecionando a opção e inicie o processo de desenho. O tempo disponível é flexível, permitindo que você retorne ou apague conforme necessário.',
+                'Several points will be displayed, and by clicking on them you can create images as the points connect with straight lines. Choose one of the suggestions, then begin drawing. The available time is flexible — you may return or erase as needed.',
             options: const [
-              'Avião',
-              'Borboleta',
-              'Casa',
-              'Estrela',
-              'Quadrado',
-              'Não desejo fazer',
+              'Airplane',
+              'Butterfly',
+              'House',
+              'Star',
+              'Square',
+              'I do not wish to do it',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -1890,15 +1893,15 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                       state.currentState!.didChange(controller.answerAux.value),
                 ),
               keyboardType: TextInputType.name,
-              labelText: "O que você deseja desenhar ?",
+              labelText: "What do you wish to draw?",
               inputFormatters: [
                 FilteringTextInputFormatter.singleLineFormatter,
               ],
               validator: (value) {
                 if (value == null) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description!! Please correct it';
                 } else if ((value.isEmpty) || (value.length < 3)) {
-                  return 'Descrição invalida!! Corrija por favor';
+                  return 'Invalid description!! Please correct it';
                 }
                 return null;
               },
@@ -1915,7 +1918,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   50: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1928,13 +1931,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Você tem sentido mais fadiga ou perda de energia quase todos os dias?',
-              'Você vivenciou algum evento traumático?',
-              'Você tem escutado Zumbido no ouvido?',
-              'Você tem dificuldades em jogar fora objetos usados ou sem valor, mesmo quando não têm valor sentimental. Ultimamente guarda muitas coisas, papeis, recibos, com a ideia de que poderá precisar algum dia?',
-              'Você apresenta comportamentos repetitivos (p. ex., lavar as mãos, organizar, verificar) ou atos mentais (p. ex., orar, contar ou repetir palavras em silêncio).',
-              'Você se sente incomodado por impulsos como machucar alguém que você ama, mesmo quando não deseja fazê-lo?',
-              'Você tem visto algo estranho como figuras, sombras, fogo, fantasmas, demônios, pessoas estranhas ou algo do tipo, no seu dia a dia?',
+              'Have you been feeling more fatigue or low energy nearly every day?',
+              'Have you experienced a traumatic event?',
+              'Have you been hearing ringing in your ear?',
+              'Do you have difficulty discarding used or worthless objects, even when they have no sentimental value? Do you keep many items, papers, receipts, thinking they might be useful someday?',
+              'Do you exhibit repetitive behaviors (e.g., washing hands, organizing, checking) or mental acts (e.g., praying, counting, repeating words silently)?',
+              'Do you feel bothered by impulses such as hurting someone you love, even though you do not want to?',
+              'Have you seen anything unusual such as figures, shadows, fire, ghosts, demons, strange people, or similar in your daily life?',
             ],
           ),
         ],
@@ -1945,7 +1948,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
       'selectedIcon': Icons.comment_sharp,
       'deselectedIcon': Icons.comments_disabled,
     },
-    'header': 'Jogo dos 5 (cinco) erros',
+    'header': 'Find the 5 differences game',
     'answerLenght': 1,
     'itens':
         (
@@ -1954,7 +1957,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
         ) => [
           const DisplayFrame(
             body:
-                'No botão que aparece na barra de aplicação acima é possível mudar entre duas imagens: uma considerada \'verdadeira\' e a outra \'falsa\'. Entre elas, há 5 alterações que você deve identificar, apontando as discrepâncias por meio de cliques nos locais correspondentes na imagem falsa.',
+                'The button in the app bar above allows switching between two images: one "real" and the other "altered." Between them are 5 differences you must identify by clicking the corresponding locations on the altered image.',
             bodyHasFrame: false,
           ),
           const SizedBox(height: 10.0),
@@ -1971,7 +1974,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   52: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -1984,20 +1987,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Nos últimos meses, você tem ouvido vozes de pessoas estranhas?',
-              'Ultimamente, você tem ouvido vozes que são seus próprios pensamentos sendo expressos em voz alta?',
-              'Alguém tem tentado envenená-lo(a)?',
-              'Você tem dificuldade para relaxar? Está sempre ocupado(a)?',
-              'Você vem apresentando sensações de falta de ar ou sufocamento?',
-              'Você está vivenciando um estado de luto prolongado e persistente, que se estende por um período superior a 12 meses, caracterizado por uma intensa saudade, preocupação e apatia em relação ao futuro?',
-              'Você tem medo de ser demitido(a) o tempo todo?',
+              'In recent months, have you heard voices from unknown people?',
+              'Lately, have you heard your own thoughts being spoken out loud?',
+              'Is someone trying to poison you?',
+              'Do you have difficulty relaxing? Are you always busy?',
+              'Have you been experiencing sensations of shortness of breath or suffocation?',
+              'Are you experiencing prolonged and persistent grief for over 12 months, marked by intense longing, worry, and apathy about the future?',
+              'Are you constantly afraid of being fired?',
             ],
           ),
         ],
   },
   53: {
     'hasProx': true,
-    'header': 'Avalie e responda !!',
+    'header': 'Evaluate and answer!!',
     'answerLenght': 1,
     'itens':
         (
@@ -2011,8 +2014,8 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: "Qual das imagens abaixo completa a sequência a seguir?",
-            //icon: Icons.more_time,
+            title:
+                "Which of the images below completes the following sequence?",
             options: const [
               'assets/intel_2a.png',
               'assets/intel_2b.png',
@@ -2027,9 +2030,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           ),
         ],
   },
+
   54: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -2042,33 +2046,32 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Você vive com medo de decepcionar as pessoas?',
-              'Você tem-se irritado com mais facilidade que antes?',
-              'Nos últimos meses você sente dificuldades de parar de se preocupar?',
-              'Você pensa muitas coisas ao mesmo tempo?',
-              'Você sente dificuldade em se concentrar?',
-              'Evita realizar atividades profissionais ou estudantis que impliquem contato interpessoal, pois tem muito medo de críticas, desaprovação ou rejeição?',
-              'Você não acha que tem fraquezas e muito menos evita ambientes, pois consegue tudo o que quer?',
+              'Do you live in fear of disappointing people?',
+              'Have you been getting irritated more easily than before?',
+              'In recent months, have you found it hard to stop worrying?',
+              'Do you think about many things at the same time?',
+              'Do you have difficulty concentrating?',
+              'Do you avoid professional or academic activities that require interpersonal contact because you fear criticism, disapproval, or rejection?',
+              'Do you believe you have no weaknesses and never avoid environments, because you can achieve anything you want?',
             ],
           ),
         ],
   },
   55: {
     'hasProx': true,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
-        body:
-            "Na próxima tela será reproduzida algumas palavras. Fique atento.",
+        body: "On the next screen, some words will be played. Pay attention.",
         bodyHasFrame: false,
       ),
     ],
   },
   56: {
     'hasProx': false,
-    'header': 'Pressione o play para escutar !!',
+    'header': 'Press play to listen!!',
     'answerLenght': 0,
     'itens':
         (
@@ -2085,7 +2088,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   57: {
     'hasProx': true,
-    'header': 'Avalie e responda !!',
+    'header': 'Evaluate and answer!!',
     'answerLenght': 1,
     'itens':
         (
@@ -2098,8 +2101,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                'Escolha de 2 a 3 imagens que possam representar você ou seu jeito de ser.',
-            //icon: Icons.more_time,
+                'Choose 2 to 3 images that best represent you or your personality.',
             options: const [
               'assets/questao45coquetel.png',
               'assets/questao45humburgue.png',
@@ -2126,7 +2128,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   58: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -2139,20 +2141,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Você acredita que precisa fazer as coisas de forma perfeita, caso contrário não será aceito (a)? ',
-              'Você acredita que as pessoas estão julgando suas atitudes e comportamentos, mesmo que não estejam dizendo?',
-              'Você tem ideias negativas, como pensar em morrer?',
-              'Você se sente inadequado (a) inquieto (a) e conversa de forma excessiva?',
-              'Você costuma adiar ou evitar fazer as coisas até o último minuto? Possui o perfil de procrastinar?',
-              'Tem relutado em delegar tarefas ou de trabalhar com outras pessoas, pois precisa estar no controle de tudo.',
-              'Você percebe que se esforça de forma intensa para evitar ser abandonado (a)?',
+              'Do you believe you must do things perfectly, otherwise you will not be accepted?',
+              'Do you believe people are judging your actions and behaviors even when they do not say so?',
+              'Do you have negative thoughts such as thinking about dying?',
+              'Do you feel inadequate, restless, and talk excessively?',
+              'Do you often postpone or avoid doing things until the last minute? Do you tend to procrastinate?',
+              'Have you been reluctant to delegate tasks or work with others because you feel you must control everything?',
+              'Do you notice that you make great efforts to avoid being abandoned?',
             ],
           ),
         ],
   },
   59: {
     'hasProx': true,
-    'header': 'Responda de acordo com o som escutado anteriormente!!',
+    'header': 'Answer according to the sound previously heard!!',
     'answerLenght': 1,
     'itens':
         (
@@ -2164,7 +2166,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'Qual das opções corresponde ao som escutado?\n',
+            title: 'Which of the options matches the sound you heard?\n',
             icon: Icons.more_time,
             options: const [
               "Rua - Madeira - Paz - Pastel",
@@ -2180,7 +2182,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   60: {
     'hasProx': true,
     'header':
-        'Marque a expressão que melhor corresponde a emoção básica descrita.',
+        'Choose the expression that best matches the basic emotion described.',
     'answerLenght': 6,
     'itens':
         (
@@ -2191,12 +2193,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
+          // Disgust
           SingleSelectionList(
             answer: controller.answerAux.value[0]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'a) Nojo:',
+            title: 'a) Disgust:',
             icon: Icons.more_time,
             options: const ["1", "2", "3", "4", "5", "6"],
             optionsColumnsSize: 6,
@@ -2205,12 +2209,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
+          // Sadness
           SingleSelectionList(
             answer: controller.answerAux.value[1]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'b) Tristeza:',
+            title: 'b) Sadness:',
             icon: Icons.more_time,
             options: const ["1", "2", "3", "4", "5", "6"],
             optionsColumnsSize: 6,
@@ -2219,12 +2225,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
+          // Fear
           SingleSelectionList(
             answer: controller.answerAux.value[2]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'c) Medo:',
+            title: 'c) Fear:',
             icon: Icons.more_time,
             options: const ["1", "2", "3", "4", "5", "6"],
             optionsColumnsSize: 6,
@@ -2233,12 +2241,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
+          // Anger
           SingleSelectionList(
             answer: controller.answerAux.value[3]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'd) Raiva:',
+            title: 'd) Anger:',
             icon: Icons.more_time,
             options: const ["1", "2", "3", "4", "5", "6"],
             optionsColumnsSize: 6,
@@ -2247,12 +2257,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
+          // Joy
           SingleSelectionList(
             answer: controller.answerAux.value[4]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'e) Alegria:',
+            title: 'e) Joy:',
             icon: Icons.more_time,
             options: const ["1", "2", "3", "4", "5", "6"],
             optionsColumnsSize: 6,
@@ -2261,12 +2273,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
+          // Surprise
           SingleSelectionList(
             answer: controller.answerAux.value[5]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: 'f) Surpresa:',
+            title: 'f) Surprise:',
             icon: Icons.more_time,
             options: const ["1", "2", "3", "4", "5", "6"],
             optionsColumnsSize: 6,
@@ -2276,20 +2290,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   61: {
     'hasProx': true,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            "Nas próximas 4 telas, serão exibidas diversas expressões representando diferentes sentimentos. Em cada tela, selecione pelo menos 3 e no máximo 4 expressões que melhor correspondem ao que você tem sentido nos últimos meses.\n\nQuando estiver pronto é só clicar em próximo...",
+            "Over the next 4 screens, several expressions representing different feelings will be shown. On each screen, select at least 3 and at most 4 expressions that best represent what you have felt in the past few months.\n\nWhen you're ready, click next...",
         bodyHasFrame: false,
       ),
     ],
   },
   62: {
     'hasProx': true,
-    'header': 'Selecione!',
+    'header': 'Select!',
     'answerLenght': 1,
     'itens':
         (
@@ -2301,9 +2315,8 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            //icon: Icons.more_time,
             title:
-                'Selecione pelo menos 2 e no máximo 4 expressões que melhor correspondem ao que você tem sentido nos últimos meses.',
+                'Select at least 2 and at most 4 expressions that best represent how you have felt in the past few months.',
             options: const [
               'assets/emoji_sempre_atrasado.png',
               'assets/emoji_poderoso.png',
@@ -2326,7 +2339,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   63: {
     'hasProx': true,
-    'header': 'Selecione!',
+    'header': 'Select!',
     'answerLenght': 1,
     'itens':
         (
@@ -2338,9 +2351,8 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            //icon: Icons.more_time,
             title:
-                'Selecione pelo menos 2 e no máximo 4 expressões que melhor correspondem ao que você tem sentido nos últimos meses.',
+                'Select at least 2 and at most 4 expressions that best represent how you have felt in the past few months.',
             options: const [
               'assets/emoji_esperancoso.png',
               'assets/emoji_pura_alegria.png',
@@ -2363,7 +2375,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   64: {
     'hasProx': true,
-    'header': 'Selecione!',
+    'header': 'Select!',
     'answerLenght': 1,
     'itens':
         (
@@ -2375,9 +2387,8 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            //icon: Icons.more_time,
             title:
-                'Selecione pelo menos 2 e no máximo 4 expressões que melhor correspondem ao que você tem sentido nos últimos meses.',
+                'Select at least 2 and at most 4 expressions that best represent how you have felt in the past few months.',
             options: const [
               'assets/emoji_apaixonado.png',
               'assets/emoji_desesperado.png',
@@ -2400,7 +2411,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   65: {
     'hasProx': true,
-    'header': 'Selecione!',
+    'header': 'Select!',
     'answerLenght': 1,
     'itens':
         (
@@ -2412,9 +2423,8 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            //icon: Icons.more_time,
             title:
-                'Selecione pelo menos 2 e no máximo 4 expressões que melhor correspondem ao que você tem sentido nos últimos meses.',
+                'Select at least 2 and at most 4 expressions that best represent how you have felt in the past few months.',
             options: const [
               'assets/emoji_com_raiva.png',
               'assets/emoji_silenciado.png',
@@ -2437,7 +2447,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   66: {
     'hasProx': true,
-    'header': 'Avalie e responda !!',
+    'header': 'Evaluate and answer!!',
     'answerLenght': 1,
     'itens':
         (
@@ -2450,78 +2460,78 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             title:
-                "Selecione as palavras que você mais gosta e, ao mesmo tempo, lhe descreveria. A quantidade é ilimitada, pode escolher quantas palavras quiser, desde que elas fazem sentido na sua vida.",
+                "Select the words you like the most and that also describe you. The amount is unlimited — choose as many words as you want, as long as they make sense in your life.",
             options: const [
-              'ABANDONO',
-              'ACOMETIDO(A)',
-              'AFEIÇÃO',
-              'AMIUDAR',
-              'ANTIPATIA',
-              'APATIA',
-              'APEGO',
-              'APREENSÃO',
-              'ARQUEJO',
-              'ATONIA',
-              'AUTENTICIDADE',
-              'AUTOCÍDIO',
-              'AUTOESTIMA',
-              'BELEZA',
-              'BONDADE',
-              'COMPLACÊNCIA',
-              'COMPULSÃO',
-              'CORAGEM',
-              'DECÊNCIA',
-              'DESAFETO',
-              'DESÂNIMO',
-              'DESARMONIA',
-              'DESTEMOR',
-              'DIGNIDADE',
-              'ELEGÂNCIA',
-              'EMPATIA',
-              'ENGODO',
-              'ESPERANÇA',
-              'ESTIMA',
-              'ESTREITEZA',
-              'EUFORIA',
-              'FORTÚNIO',
-              'FRACASSO',
-              'FRAQUEZA',
-              'FUGAZ',
-              'GENTILEZA',
-              'GRATIDÃO',
-              'HARMONIA',
-              'HUMILDADE',
-              'IMPAVIDEZ',
-              'IMPOTÊNCIA',
-              'IMPULSIVIDADE',
-              'INAPETÊNCIA',
-              'INDIFERENÇA',
-              'INDULGÊNCIA',
-              'INQUIETUDE',
-              'INTELIGÊNCIA',
-              'LETARGIA',
-              'MÁGOA',
+              'ABANDONMENT',
+              'AFFECTED',
+              'AFFECTION',
+              'INCREASE',
+              'ANTIPATHY',
+              'APATHY',
+              'ATTACHMENT',
+              'APPREHENSION',
+              'GASP',
+              'ATONY',
+              'AUTHENTICITY',
+              'SELF-KILLING',
+              'SELF-ESTEEM',
+              'BEAUTY',
+              'KINDNESS',
+              'COMPLACENCY',
+              'COMPULSION',
+              'COURAGE',
+              'DECENCY',
+              'DISAFFECTION',
+              'DISCOURAGEMENT',
+              'DISHARMONY',
+              'FEARLESSNESS',
+              'DIGNITY',
+              'ELEGANCE',
+              'EMPATHY',
+              'DECEPTION',
+              'HOPE',
+              'ESTEEM',
+              'NARROWNESS',
+              'EUPHORIA',
+              'FORTUNE',
+              'FAILURE',
+              'WEAKNESS',
+              'FLEETING',
+              'KINDNESS',
+              'GRATITUDE',
+              'HARMONY',
+              'HUMILITY',
+              'IMPASSIVENESS',
+              'IMPOTENCE',
+              'IMPULSIVITY',
+              'LOSS OF APPETITE',
+              'INDIFFERENCE',
+              'INDULGENCE',
+              'RESTLESSNESS',
+              'INTELLIGENCE',
+              'LETHARGY',
+              'HURT',
               'MANIA',
-              'MAQUIAVÉLICO',
-              'MELANCOLIA',
-              'MORTE',
+              'MACHIAVELLIAN',
+              'MELANCHOLY',
+              'DEATH',
               'NOSTALGIA',
-              'OBCECAÇÃO',
-              'OBSESSÃO',
-              'PERECÍVEL',
-              'PERSISTÊNCIA',
-              'PREOCUPAÇÃO',
-              'PROSTRAÇÃO',
-              'PRUDÊNCIA',
-              'RUMINAÇÃO',
-              'RAIVA',
-              'RANCOR',
-              'SATISFAÇÃO',
-              'SIGILO',
-              'SOLIDÃO',
-              'SUICÍDIO',
-              'TENACIDADE',
-              'VIRTUDE',
+              'OBSESSION',
+              'OBSESSION (INTENSE)',
+              'PERISHABLE',
+              'PERSISTENCE',
+              'WORRY',
+              'PROSTRATION',
+              'PRUDENCE',
+              'RUMINATION',
+              'ANGER',
+              'RESENTMENT',
+              'SATISFACTION',
+              'SECRECY',
+              'LONELINESS',
+              'SUICIDE',
+              'TENACITY',
+              'VIRTUE',
             ],
             optionsColumnsSize: 2,
             mimSizeAnswer: 1,
@@ -2531,20 +2541,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   67: {
     'hasProx': true,
-    'header': 'Atenção!!',
+    'header': 'Attention!!',
     'delay': 3,
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            "Na próxima tela será reproduzida uma lista de 10 pares de palavras relacionadas logicamente entre si (p. ex., alto-baixo). Depois, você será solicitado para preencher a palavra faltante. Fique atento, você terá que memorizar todos os pares.\n\nQuando estiver pronto é só clicar em próximo...",
+            "On the next screen, a list of 10 pairs of logically related words will be played (e.g., high–low). Then, you will be asked to fill in the missing word. Pay attention — you must memorize all pairs.\n\nWhen you're ready, click next...",
         bodyHasFrame: false,
       ),
     ],
   },
   68: {
     'hasProx': false,
-    'header': 'Pressione o play para escutar !!',
+    'header': 'Press play to listen!!',
     'answerLenght': 0,
     'itens':
         (
@@ -2561,7 +2571,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   69: {
     'hasProx': true,
-    'header': 'Complete com o par correspondente escutado anteriormente',
+    'header': 'Complete with the corresponding pair heard earlier',
     'answerLenght': 10,
     'itens':
         (
@@ -2574,13 +2584,10 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: 'chuva -',
+            options: 'rain -',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2589,19 +2596,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[1]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: 'criança -',
+            options: 'child -',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2610,19 +2615,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[2]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: '- verão',
+            options: '- summer',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2631,19 +2634,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[3]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: 'mostro -',
+            options: 'monster -',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2652,19 +2653,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[4]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: '- água',
+            options: '- water',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2673,19 +2672,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[5]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: 'dinheiro -',
+            options: 'money -',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2694,19 +2691,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[6]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: '- pequeno',
+            options: '- small',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2715,19 +2710,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[7]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: 'livro -',
+            options: 'book -',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2736,19 +2729,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[8]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: '- móvel',
+            options: '- furniture',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2757,19 +2748,17 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           TextFormList(
             answer: controller.answerAux.value[9]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             optionsColumnsSize: 1,
-            options: 'Professor -',
+            options: 'Teacher -',
             validator: (value) {
-              if (value == null) {
-                return 'Dados Incorrets!!';
-              } else if ((value.isEmpty) || (value.length < 2)) {
-                return 'Dados Incorretos!!';
-              }
+              if (value == null) return 'Incorrect data!!';
+              if (value.isEmpty || value.length < 2) return 'Incorrect data!!';
               return null;
             },
             keyboardType: TextInputType.name,
@@ -2779,7 +2768,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   70: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -2792,21 +2781,21 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Você se preocupa com a internet (pensa sobre atividades virtuais anteriores ou fica antecipando quando ocorrerá a próxima conexão)?',
-              'Você sente necessidade de usar a internet por períodos cada vez maiores para se sentir satisfeito?',
-              'Você já se esforçou repetidas vezes para controlar, diminuir ou parar de usar a internet, mas fracassou?',
-              'Você fica inquieto, mal-humorado, deprimido ou irritável quando tenta diminuir, parar de usar a internet ou quando o uso é restringido?',
-              'Você fica online mais tempo do que pretendia originalmente?',
-              'Você já prejudicou ou correu o risco de perder um relacionamento significativo, emprego ou oportunidade educacional ou profissional por causa de internet?',
-              'Você já mentiu para familiares, terapeutas ou outras pessoas para esconder a extensão do seu envolvimento com a internet?',
-              'Você usa a internet como uma maneira de fugir de problemas ou de aliviar um humor desagradável (por exemplo, sentimento de impotência, solidão, culpa, tristeza, ansiedade, depressão)?',
+              'Do you worry about the internet (thinking about past virtual activities or anticipating your next connection)?',
+              'Do you feel the need to use the internet for increasingly longer periods to feel satisfied?',
+              'Have you repeatedly tried to control, reduce, or stop using the internet but failed?',
+              'Do you become restless, moody, depressed, or irritable when trying to reduce or stop internet use, or when use is restricted?',
+              'Do you stay online longer than you originally intended?',
+              'Have you harmed or risked losing an important relationship, job, or educational opportunity because of the internet?',
+              'Have you lied to family members, therapists, or others to hide the extent of your internet involvement?',
+              'Do you use the internet as a way to escape problems or relieve unpleasant moods (e.g., helplessness, loneliness, guilt, sadness, anxiety, depression)?',
             ],
           ),
         ],
   },
   71: {
     'hasProx': true,
-    'header': 'Com que frequência você pausa e consome estas substâncias?',
+    'header': 'How often do you pause and consume these substances?',
     'answerLenght': 5,
     'itens':
         (
@@ -2818,14 +2807,14 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: '1) Cafeina:',
+            title: '1) Caffeine:',
             icon: Icons.more_time,
             options: const [
-              'Nunca',
-              'Uma vez por mês ou menos (raramente)',
-              'Duas a quatro vezes ao mês (às vezes)',
-              'Duas a três vezes por semana',
-              'Na maioria dos dias ou sempre',
+              'Never',
+              'Once a month or less (rarely)',
+              'Two to four times a month (sometimes)',
+              'Two to three times a week',
+              'Most days or always',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -2833,19 +2822,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[1]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: '2)	Álcool:',
+            title: '2) Alcohol:',
             icon: Icons.more_time,
             options: const [
-              'Nunca',
-              'Uma vez por mês ou menos (raramente)',
-              'Duas a quatro vezes ao mês (às vezes)',
-              'Duas a três vezes por semana',
-              'Na maioria dos dias ou sempre',
+              'Never',
+              'Once a month or less (rarely)',
+              'Two to four times a month (sometimes)',
+              'Two to three times a week',
+              'Most days or always',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -2853,19 +2843,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[2]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: '3)	Tabaco:',
+            title: '3) Tobacco:',
             icon: Icons.more_time,
             options: const [
-              'Nunca',
-              'Uma vez por mês ou menos (raramente)',
-              'Duas a quatro vezes ao mês (às vezes)',
-              'Duas a três vezes por semana',
-              'Na maioria dos dias ou sempre',
+              'Never',
+              'Once a month or less (rarely)',
+              'Two to four times a month (sometimes)',
+              'Two to three times a week',
+              'Most days or always',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -2873,19 +2864,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[3]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: '4)	Maconha:',
+            title: '4) Marijuana:',
             icon: Icons.more_time,
             options: const [
-              'Nunca',
-              'Uma vez por mês ou menos (raramente)',
-              'Duas a quatro vezes ao mês (às vezes)',
-              'Duas a três vezes por semana',
-              'Na maioria dos dias ou sempre',
+              'Never',
+              'Once a month or less (rarely)',
+              'Two to four times a month (sometimes)',
+              'Two to three times a week',
+              'Most days or always',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -2893,19 +2885,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           const SizedBox(height: 10.0),
           const Divider(),
           const SizedBox(height: 10.0),
+
           SingleSelectionList(
             answer: controller.answerAux.value[4]
               ..addListener(
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
-            title: '5)	Cocaína/crack:',
+            title: '5) Cocaine/crack:',
             icon: Icons.more_time,
             options: const [
-              'Nunca',
-              'Uma vez por mês ou menos (raramente)',
-              'Duas a quatro vezes ao mês (às vezes)',
-              'Duas a três vezes por semana',
-              'Na maioria dos dias ou sempre',
+              'Never',
+              'Once a month or less (rarely)',
+              'Two to four times a month (sometimes)',
+              'Two to three times a week',
+              'Most days or always',
             ],
             optionsColumnsSize: 1,
             hasPrefiroNaoDizer: false,
@@ -2914,7 +2907,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   72: {
     'hasProx': true,
-    'header': 'Responda as questões abaixo:',
+    'header': 'Answer the questions below:',
     'answerLenght': 1,
     'itens':
         (
@@ -2927,20 +2920,20 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
                 () => state.currentState!.didChange(controller.answerAux.value),
               ),
             options: const [
-              'Você tem medo ou ansiedade acentuados acerca de um objeto ou situação (p. ex., voar, altura, animais, tomar uma injeção, ver sangue).',
-              'Você apresenta dificuldade persistente de descartar ou de se desfazer de pertences, independentemente do seu valor real.',
-              'Possui medo ou ansiedade acentuada acerca de uma ou mais situações sociais em que é exposto a uma possível avaliação por outras pessoas. Exemplos incluem interações sociais (p. ex., manter uma conversa, encontrar pessoas que não são familiares), ser observado (p. ex., comendo ou bebendo) e situações de desempenho diante de outros (p. ex., proferir palestras, falar em público).',
-              'Você não tem amigos íntimos ou confidentes que não sejam membros da família de primeiro grau. Geralmente, busca atividades de lazer e/ou profissionais de forma solitária?',
-              'Você adota um estilo bem baixo de gastos em relação a si e a outros; enxergando o dinheiro como algo a ser poupado para possíveis emergências futuras.',
-              'Você vem tendo sentimentos de inutilidade ou culpa excessiva? ',
-              'Você iniciou uma quantidade maior de projetos do que o normal ou se envolveu em atividades mais arriscadas do que o habitual?',
+              'Do you have intense fear or anxiety about a specific object or situation (e.g., flying, heights, animals, injections, blood)?',
+              'Do you have persistent difficulty discarding or parting with possessions, regardless of their actual value?',
+              'Do you experience strong fear or anxiety in one or more social situations where you may be exposed to possible scrutiny by others? Examples include social interactions (e.g., conversations, meeting unfamiliar people), being observed (eating or drinking), or performing in front of others (giving speeches, public speaking).',
+              'Do you have no close friends or confidants who are not first-degree relatives, and generally seek leisure and/or work activities in solitude?',
+              'Do you adopt an extremely low spending style for yourself and others, seeing money as something to be saved for potential future emergencies?',
+              'Have you been experiencing feelings of worthlessness or excessive guilt?',
+              'Have you started more projects than usual or engaged in riskier activities than you normally would?',
             ],
           ),
         ],
   },
   73: {
     'hasProx': true,
-    'header': 'Escolha !!',
+    'header': 'Choose!!',
     'answerLenght': 1,
     'itens':
         (
@@ -2950,15 +2943,15 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
           SingleSelectionList(
             answer: controller.answerAux.value[0]
               ..addListener(() {
-                if (controller.answerAux.value[0].value == 'Tenho daltonismo') {
+                if (controller.answerAux.value[0].value == 'I am colorblind') {
                   controller.idPage.value = controller.idPage.value + 2;
                 }
                 state.currentState!.didChange(controller.answerAux.value);
               }),
             title:
-                'Daltonismo é o termo usado para denominar a falta de sensibilidade ocular que algumas pessoas possuem na percepção de determinadas cores. Você tem Daltonismo? Foi diagnosticado por um profissional especializado? Se sim, basta clicar em \'Tenho daltonismo.\' Se você não tem daltonismo, clique em \'Não tenho daltonismo\' e depois continuar com a atividade.\n',
+                'Colorblindness is the term used to describe the lack of ocular sensitivity some people have in perceiving certain colors. Are you colorblind? Were you diagnosed by a specialized professional? If yes, click "I am colorblind." If not, click "I am not colorblind" and continue the activity.\n',
             icon: Icons.more_time,
-            options: const ['Tenho daltonismo', 'Não tenho daltonismo'],
+            options: const ['I am colorblind', 'I am not colorblind'],
             optionsColumnsSize: 3,
             hasPrefiroNaoDizer: false,
           ),
@@ -2966,7 +2959,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   74: {
     'hasProx': true,
-    'header': 'Vamos colorir !!',
+    'header': 'Let’s color!!',
     'answerLenght': 1,
     'itens':
         (
@@ -2975,7 +2968,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
         ) => [
           const DisplayFrame(
             body:
-                'Marque a cor que você mais gosta e pinte os círculos da figura abaixo. Faça da forma que mais te agrada.\n',
+                'Choose the color you like the most and paint the circles in the image below. Do it in any way you prefer.\n',
             bodyHasFrame: false,
           ),
           ArvoreCiculos(
@@ -2985,15 +2978,15 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             imagem: 'assets/arvore_circulos.png',
             itens: const [
-              'Azul',
-              'Verde',
-              'Laranja',
-              'Amarelo',
-              'Vermelho',
-              'Rosa',
-              'Marrom',
-              'Preto',
-              'Cinza',
+              'Blue',
+              'Green',
+              'Orange',
+              'Yellow',
+              'Red',
+              'Pink',
+              'Brown',
+              'Black',
+              'Grey',
             ],
             optionsColumnsSize: 3,
             colors: const [
@@ -3012,7 +3005,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   75: {
     'hasProx': true,
-    'header': 'Vamos colorir !!',
+    'header': 'Let’s color!!',
     'answerLenght': 1,
     'itens':
         (
@@ -3021,7 +3014,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
         ) => [
           const DisplayFrame(
             body:
-                'Marque a cor que você mais gosta e pinte os retângulos da figura abaixo. Faça da forma que mais te agrada.\n',
+                'Choose the color you like the most and paint the rectangles in the image below. Do it in any way you prefer.\n',
             bodyHasFrame: false,
           ),
           MuroColorido(
@@ -3031,15 +3024,15 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             imagem: 'assets/arvore_circulos.png',
             itens: const [
-              'Azul',
-              'Verde',
-              'Laranja',
-              'Amarelo',
-              'Vermelho',
-              'Rosa',
-              'Marrom',
-              'Preto',
-              'Cinza',
+              'Blue',
+              'Green',
+              'Orange',
+              'Yellow',
+              'Red',
+              'Pink',
+              'Brown',
+              'Black',
+              'Grey',
             ],
             optionsColumnsSize: 3,
             colors: const [
@@ -3058,7 +3051,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   76: {
     'hasProx': true,
-    'header': 'Selecione qual dia da semana é hoje:',
+    'header': 'Select which day of the week is today:',
     'answerLenght': 1,
     'itens':
         (
@@ -3072,13 +3065,13 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             options: const [
-              'Segunda-feira',
-              'Terça-feira',
-              'Quarta-feira',
-              'Quinta-feira',
-              'Sexta-feira',
-              'Sábado',
-              'Domingo',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+              'Sunday',
             ],
             optionsColumnsSize: 2,
             hasPrefiroNaoDizer: false,
@@ -3088,7 +3081,7 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   77: {
     'hasProx': true,
     'header':
-        'Quanto tempo, aproximadamente, você acha que investiu para fazer este teste?',
+        'How much time, approximately, do you think you spent completing this test?',
     'answerLenght': 1,
     'itens':
         (
@@ -3102,12 +3095,12 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
               ),
             icon: Icons.more_time,
             options: const [
-              '5 minutos',
-              '15 minutos',
-              '30 minutos',
-              '40 minutos',
-              '60 minutos',
-              'Mais que 1 hora',
+              '5 minutes',
+              '15 minutes',
+              '30 minutes',
+              '40 minutes',
+              '60 minutes',
+              'More than 1 hour',
             ],
             optionsColumnsSize: 2,
             hasPrefiroNaoDizer: false,
@@ -3116,12 +3109,12 @@ Declaramos que obtivemos de forma apropriada e voluntária, o Consentimento Livr
   },
   78: {
     'hasProx': false,
-    'header': 'Parabéns!!!!',
+    'header': 'Congratulations!!!!',
     'answerLenght': 0,
     'itens': (_, __) => [
       const DisplayFrame(
         body:
-            "Você terminou o questionário, agradeçemos muito pela sua disponibilidade.\n\nOBS.: Você ja pode fechar esta página.",
+            "You have completed the questionnaire. We greatly appreciate your time and availability.\n\nPS: You may now close this page.",
         bodyHasFrame: false,
       ),
     ],

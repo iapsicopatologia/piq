@@ -11,14 +11,22 @@ class TelasModule extends Module {
   void binds(i) {
     i.addInstance<Dio>(Dio());
     i.addSingleton<AssistidoRemoteStorageInterface>(
-        AssistidoRemoteStorageRepository.new);
+      AssistidoRemoteStorageRepository.new,
+    );
     i.addSingleton<TelasController>(TelasController.new);
   }
 
   @override
   void routes(r) {
     //r.child('/', child: (_) => const SplashPage());
-    r.child('/', child: (_) => TelasPage(id: r.args.data ?? 1));
+    r.child(
+      '/',
+      child: (_) {
+        final data = r.args.data;
+        final id = (data is int) ? data : 1;
+        return TelasPage(id: id);
+      },
+    );
     r.wildcard(child: (_) => const NotFoundPage());
   }
 }
