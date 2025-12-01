@@ -5,16 +5,19 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
 
       - name: Setup Flutter
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
           channel: "beta"
 
@@ -22,19 +25,16 @@ jobs:
         run: flutter pub get
 
       - name: Build Web
-        run: flutter build web --wasm --release --base-href=/qip/
+        run: flutter build web --wasm --release --base-href=/piq/
 
-      - name: Deploy
+      - name: Deploy to gh-pages
         run: |
-          git config --global init.defaultBranch main
           cd build/web
           git init
-          git config --global user.email josuemorais@gmail.com
-          git config --global user.name josuemoraisgh
-          git status
-          git remote add origin https://${{secrets.token}}@github.com/josuemoraisgh/qip.git
-          #git remote add origin https://${{secrets.token}}@github.com/iapsicopatologia/qip.git
-          git checkout -b gh-pages
-          git add --all
-          git commit -m "update"
-          git push origin gh-pages -f
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git add .
+          git commit -m "Deploy to gh-pages"
+          git branch -M gh-pages
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/iapsicopatologia/piq.git
+          git push -f origin gh-pages
