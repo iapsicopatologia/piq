@@ -88,10 +88,10 @@ class _SingleSelectionListState extends State<SingleSelectionList> {
             autovalidateMode: AutovalidateMode.always, //.onUserInteraction,
             validator: (ValueNotifier<String>? value) {
               if (value == null) {
-                return 'Por favor escolha um item';
+                return 'Please choose an item';
               } else {
                 if (value.value.isEmpty) {
-                  return 'Por favor escolha um item';
+                  return 'Please choose an item';
                 }
               }
               return (null);
@@ -115,8 +115,8 @@ class _SingleSelectionListState extends State<SingleSelectionList> {
                     if (widget.hasPrefiroNaoDizer)
                       Expanded(
                         child: CustomButton(
-                          title: "Prefiro não dizer",
-                          value: "Prefiro não dizer",
+                          title: "Prefer not to say",
+                          value: "Prefer not to say",
                           groupValue: answerAux,
                           onChanged: (_) {
                             state.didChange(answerAux);
