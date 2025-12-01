@@ -4,8 +4,7 @@ import '../base_widget/custom_button.dart';
 class TypeYesNo extends StatefulWidget {
   final ValueNotifier<String> answer;
   final List<String> options;
-  const TypeYesNo(
-      {super.key, required this.answer, required this.options});
+  const TypeYesNo({super.key, required this.answer, required this.options});
 
   @override
   State<TypeYesNo> createState() => _TypeYesNoState();
@@ -21,10 +20,14 @@ class _TypeYesNoState extends State<TypeYesNo> {
     var aux = widget.answer.value.split(";");
     if (aux.length != widget.options.length) {
       answerAux = List.generate(
-          widget.options.length, (index) => ValueNotifier<String>(""));
+        widget.options.length,
+        (index) => ValueNotifier<String>(""),
+      );
     } else {
       answerAux = List.generate(
-          widget.options.length, (index) => ValueNotifier<String>(aux[index]));
+        widget.options.length,
+        (index) => ValueNotifier<String>(aux[index]),
+      );
     }
   }
 
@@ -41,9 +44,7 @@ class _TypeYesNoState extends State<TypeYesNo> {
         _formKey.currentState!.save();
       },
       autovalidateMode: AutovalidateMode.always, //.onUserInteraction,
-      child: Column(
-        children: _montaAternativas(widget.options),
-      ),
+      child: Column(children: _montaAternativas(widget.options)),
     );
   }
 
@@ -68,8 +69,8 @@ class _TypeYesNoState extends State<TypeYesNo> {
               children: [
                 Expanded(
                   child: CustomButton(
-                    title: "Sim",
-                    value: "Sim",
+                    title: "Yes",
+                    value: "Yes",
                     groupValue: answerAux[i],
                     onChanged: (value) {
                       state.didChange(value);
@@ -78,8 +79,8 @@ class _TypeYesNoState extends State<TypeYesNo> {
                 ),
                 Expanded(
                   child: CustomButton(
-                    title: "Não",
-                    value: "Não",
+                    title: "No",
+                    value: "No",
                     groupValue: answerAux[i],
                     onChanged: (value) {
                       state.didChange(value);
@@ -91,9 +92,9 @@ class _TypeYesNoState extends State<TypeYesNo> {
           },
           validator: (String? value) {
             if (value == null) {
-              return 'Por favor escolha um item';
+              return 'Please choose an item';
             } else if (value.isEmpty) {
-              return 'Por favor escolha um item';
+              return 'Please choose an item';
             }
             return (null);
           },

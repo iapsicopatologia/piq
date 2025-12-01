@@ -41,10 +41,14 @@ class _MultiSelectionListState extends State<MultiSelectionList> {
     var aux = widget.answer.value.split(";");
     if (aux.length != widget.options.length) {
       answerAux = List.generate(
-          widget.options.length, (index) => ValueNotifier<String>(""));
+        widget.options.length,
+        (index) => ValueNotifier<String>(""),
+      );
     } else {
       answerAux = List.generate(
-          widget.options.length, (index) => ValueNotifier<String>(aux[index]));
+        widget.options.length,
+        (index) => ValueNotifier<String>(aux[index]),
+      );
     }
   }
 
@@ -64,16 +68,17 @@ class _MultiSelectionListState extends State<MultiSelectionList> {
       child: FormField<List<ValueNotifier<String>>>(
         initialValue: answerAux,
         autovalidateMode: AutovalidateMode.always, //.onUserInteraction,
-        validator: widget.validator ??
+        validator:
+            widget.validator ??
             (List<ValueNotifier<String>>? value) {
               if (value == null) {
-                return 'Por favor escolha um item';
+                return 'Please choose an item';
               } else {
                 final count = value.where((item) => item.value != "").length;
                 if (count < widget.mimSizeAnswer) {
-                  return 'Por favor escolha um item';
+                  return 'Please choose an item';
                 } else if (count > widget.maxSizeAnswer) {
-                  return 'Por favor escolha um item';
+                  return 'Please choose an item';
                 }
               }
               return (null);
@@ -91,9 +96,10 @@ class _MultiSelectionListState extends State<MultiSelectionList> {
                       widget.title!,
                       textAlign: TextAlign.justify,
                       style: const TextStyle(
-                          fontSize: 15,
-                          color: Colors.black,
-                          decorationColor: Colors.black),
+                        fontSize: 15,
+                        color: Colors.black,
+                        decorationColor: Colors.black,
+                      ),
                     ),
                   ),
                 ],
@@ -103,7 +109,8 @@ class _MultiSelectionListState extends State<MultiSelectionList> {
               length: widget.options.length,
               optionsColumnsSize: widget.optionsColumnsSize,
               builder: (int i) => Expanded(
-                child: !widget.options[i].contains('.png') &&
+                child:
+                    !widget.options[i].contains('.png') &&
                         !widget.options[i].contains('.mp3')
                     ? CustomButton(
                         title: widget.options[i],
