@@ -4,6 +4,6 @@ import 'src/app_module.dart';
 import 'src/app_widget.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized(); // Garantir que o binding esteja inicializado
   runApp(ModularApp(module: AppModule(), child: const AppWidget()));
 }
