@@ -44,7 +44,7 @@ void addListenerComposto(
 Map<int, Map<String, dynamic>> telas = {
   1: {
     'hasProx': true,
-    'header': "Interactive Psychopathology Questionnaire (QIP)",
+    'header': "Psychopathological Interactive Questionnaire (PIQ)",
     'answerLenght': 1,
     'itens':
         (
